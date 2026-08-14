@@ -1,13 +1,3 @@
-function sayHello() {
-    document.getElementById("message").innerHTML =
-        "Welcome! Thanks for visiting my website.";
-}
-function goToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-}
 function toggleTheme() {
     document.body.classList.toggle("dark-mode");
 
@@ -15,21 +5,23 @@ function toggleTheme() {
 
     if (document.body.classList.contains("dark-mode")) {
         button.textContent = "☀️ Light Mode";
-        localStorage.setItem("theme", "dark");
     } else {
         button.textContent = "🌙 Dark Mode";
-        localStorage.setItem("theme", "light");
     }
 }
 
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
+function sayHello() {
+    document.getElementById("message").textContent = "Hello! Welcome to my portfolio 👋";
+}
 
-    window.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("themeButton").textContent = "☀️ Light Mode";
+function goToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
     });
 }
-const text = "Welcome to My Website";
+
+const text = "Hello, I'm Bossman 👋";
 let index = 0;
 
 function typeText() {
