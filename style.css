@@ -1,6 +1,10 @@
 /* ================================
-   GENERAL WEBSITE STYLE
+   GLOBAL
 ================================ */
+
+* {
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -8,10 +12,30 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #333;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section {
+    padding: 20px;
+    scroll-margin-top: 80px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+h2 {
+    text-align: center;
+    color: darkblue;
+    font-size: 32px;
+    margin: 60px auto 25px;
 }
 
 
@@ -25,306 +49,200 @@ nav {
     z-index: 1000;
 
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
 
-    background-color: white;
-    padding: 15px 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    gap: 8px;
+
+    padding: 14px 15px;
+
+    background: #111827;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-nav a {
-    color: darkblue;
+nav a,
+#themeButton {
+    padding: 9px 15px;
+
+    color: white;
+
     text-decoration: none;
+
+    border: none;
+    border-radius: 8px;
+
+    background: transparent;
+
+    font-size: 15px;
     font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 6px;
+
+    cursor: pointer;
+
     transition: 0.3s ease;
 }
 
-nav a:hover {
-    background-color: darkblue;
-    color: white;
+nav a:hover,
+#themeButton:hover {
+    background: darkblue;
     transform: translateY(-2px);
 }
 
-#themeButton {
-    padding: 9px 14px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
 
 /* ================================
-   DARK MODE
+   HOME
 ================================ */
 
-body.dark-mode {
-    background-color: #111;
-    color: white;
+.home-section {
+    text-align: center;
+    padding-top: 60px;
 }
-
-body.dark-mode nav {
-    background-color: #222;
-}
-
-body.dark-mode nav a {
-    color: #66ccff;
-}
-
-body.dark-mode nav a:hover {
-    background-color: #66ccff;
-    color: #111;
-}
-
-
-/* ================================
-   HEADINGS
-================================ */
 
 h1 {
-    text-align: center;
-    font-size: 45px;
-    margin-top: 50px;
-    margin-bottom: 10px;
     color: darkblue;
-}
-
-h2 {
-    text-align: center;
-    color: darkblue;
-    font-size: 32px;
-    margin-top: 50px;
-    margin-bottom: 25px;
-}
-
-body.dark-mode h1,
-body.dark-mode h2 {
-    color: #66ccff;
-}
-
-
-/* ================================
-   TYPING TEXT
-================================ */
-
-#typingText {
     font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 1px;
+    margin: 20px auto 10px;
 }
-
-
-/* ================================
-   WELCOME / HOME
-================================ */
 
 .welcome-text {
-    text-align: center;
     font-size: 20px;
     font-weight: bold;
-    margin: 15px auto;
+    margin: 10px auto;
 }
 
 .home-description {
-    max-width: 650px;
+    max-width: 700px;
     margin: 15px auto 25px;
-    text-align: center;
-    line-height: 1.7;
     font-size: 17px;
-}
-
-body.dark-mode .welcome-text,
-body.dark-mode .home-description {
-    color: #ddd;
+    padding: 0 15px;
 }
 
 
 /* ================================
-   PROFILE IMAGE
+   HOME BUTTONS
 ================================ */
 
-img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-    border: 5px solid white;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin: 25px auto;
 }
-
-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-}
-
-body.dark-mode img {
-    border-color: #66ccff;
-}
-
-
-/* ================================
-   INTRO CARD
-================================ */
-
-.intro {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    line-height: 1.8;
-}
-
-body.dark-mode .intro {
-    background-color: #222;
-    color: white;
-}
-
-
-/* ================================
-   AVAILABILITY
-================================ */
-
-.availability {
-    display: block;
-    width: fit-content;
-    margin: 15px auto 25px;
-    padding: 8px 18px;
-    background-color: #e8f5e9;
-    color: #1b5e20;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-body.dark-mode .availability {
-    background-color: #17351c;
-    color: #7cff8a;
-}
-
-
-/* ================================
-   BUTTONS
-================================ */
 
 .cv-button,
-.work-button {
+.work-button,
+.hire-button {
     display: inline-block;
-    padding: 13px 24px;
-    margin: 8px;
-    border-radius: 25px;
+
+    padding: 13px 23px;
+
+    color: white;
+
     text-decoration: none;
+
+    border-radius: 30px;
+
     font-weight: bold;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    transition: 0.3s ease;
 }
 
 .cv-button {
-    background-color: darkblue;
-    color: white;
+    background: darkblue;
 }
 
 .work-button {
-    background-color: #222;
-    color: white;
+    background: #333;
+}
+
+.hire-button {
+    background: #25D366;
 }
 
 .cv-button:hover,
-.work-button:hover {
-    background-color: #66ccff;
-    color: #111;
+.work-button:hover,
+.hire-button:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 
 /* ================================
-   ABOUT SECTION
+   PROFILE PHOTO
+================================ */
+
+.profile-photo {
+    display: block;
+
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin: 30px auto 15px;
+
+    border: 5px solid darkblue;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.availability {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+/* ================================
+   INTRO
+================================ */
+
+.intro {
+    max-width: 750px;
+
+    margin: 25px auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    margin-top: 0;
+}
+
+
+/* ================================
+   ABOUT
 ================================ */
 
 .about-card {
-    max-width: 850px;
-    margin: 30px auto;
+    max-width: 800px;
+
+    margin: 20px auto;
+
     padding: 30px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    line-height: 1.8;
-    font-size: 17px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.about-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
+    background: white;
 
-.about-card p {
-    margin-bottom: 15px;
-}
+    border-radius: 18px;
 
-body.dark-mode .about-card {
-    background-color: #222;
-    color: white;
-}
-
-
-/* ================================
-   SERVICES
-================================ */
-
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 20px;
-}
-
-.service-card {
-    background-color: white;
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.service-card h3 {
-    color: darkblue;
-    font-size: 22px;
-    margin-bottom: 12px;
-}
-
-.service-card p {
-    line-height: 1.6;
-}
-
-body.dark-mode .service-card {
-    background-color: #222;
-    color: white;
-}
-
-body.dark-mode .service-card h3 {
-    color: #66ccff;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -334,59 +252,58 @@ body.dark-mode .service-card h3 {
 
 .skills {
     max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
+    margin: 20px auto;
 }
 
 .skill {
-    margin-bottom: 25px;
+    margin: 20px 0;
+
+    padding: 22px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .skill h3 {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
-    color: darkblue;
-}
 
-.skill p {
-    margin-bottom: 10px;
+    color: darkblue;
 }
 
 .skill-bar {
     width: 100%;
     height: 12px;
-    background-color: #ddd;
-    border-radius: 10px;
+
+    background: #ddd;
+
+    border-radius: 20px;
+
     overflow: hidden;
 }
 
 .skill-progress {
     height: 100%;
-    border-radius: 10px;
+
+    background: darkblue;
+
+    border-radius: 20px;
 }
 
 .html-progress {
     width: 85%;
-    background-color: darkblue;
 }
 
 .css-progress {
     width: 75%;
-    background-color: royalblue;
 }
 
 .js-progress {
     width: 60%;
-    background-color: steelblue;
-}
-
-body.dark-mode .skill h3 {
-    color: #66ccff;
-}
-
-body.dark-mode .skill-bar {
-    background-color: #444;
 }
 
 
@@ -394,70 +311,128 @@ body.dark-mode .skill-bar {
    PROJECTS
 ================================ */
 
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 20px;
-}
-
 .projects-intro {
-    text-align: center;
-    max-width: 600px;
+    max-width: 650px;
+
     margin: 10px auto 25px;
-    font-size: 17px;
+
+    text-align: center;
+
     color: #555;
 }
 
+.projects {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+    max-width: 1050px;
+
+    margin: 30px auto;
+
+    padding: 10px;
+}
+
 .project-card {
-    background-color: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-icon {
+    font-size: 40px;
 }
 
 .project-card h3 {
     color: darkblue;
-    margin-bottom: 12px;
-}
-
-.project-card p {
-    line-height: 1.6;
 }
 
 .project-card a {
     display: inline-block;
+
     margin-top: 10px;
+
     padding: 10px 18px;
-    background-color: darkblue;
+
+    background: darkblue;
+
     color: white;
+
     text-decoration: none;
+
     border-radius: 8px;
+
+    font-weight: bold;
 }
 
 .project-card a:hover {
-    background-color: #000080;
+    background: #000080;
 }
 
-body.dark-mode .project-card {
-    background-color: #222;
-    color: white;
+
+/* ================================
+   SERVICES
+================================ */
+
+.services {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+    max-width: 1050px;
+
+    margin: 30px auto;
+
+    padding: 10px;
 }
 
-body.dark-mode .project-card h3 {
-    color: #66ccff;
+.service-card {
+    padding: 30px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s ease;
 }
 
-body.dark-mode .projects-intro {
-    color: #ddd;
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-icon {
+    font-size: 40px;
+}
+
+.service-card h3 {
+    color: darkblue;
 }
 
 
@@ -466,30 +441,39 @@ body.dark-mode .projects-intro {
 ================================ */
 
 .why-hire {
-    max-width: 1000px;
+    max-width: 1050px;
+
     margin: 60px auto;
-    padding: 20px;
+
     text-align: center;
 }
 
 .why-hire h2 {
-    color: darkblue;
-    margin-bottom: 30px;
+    margin-top: 0;
 }
 
 .why-hire-cards {
     display: flex;
+
     justify-content: center;
+
     gap: 25px;
+
     flex-wrap: wrap;
 }
 
 .why-card {
-    background-color: white;
-    width: 250px;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    width: 280px;
+
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1);
+
     transition: 0.3s ease;
 }
 
@@ -497,21 +481,12 @@ body.dark-mode .projects-intro {
     transform: translateY(-8px);
 }
 
+.why-icon {
+    font-size: 40px;
+}
+
 .why-card h3 {
     color: darkblue;
-}
-
-.why-card p {
-    line-height: 1.6;
-}
-
-body.dark-mode .why-card {
-    background-color: #222;
-    color: white;
-}
-
-body.dark-mode .why-card h3 {
-    color: #66ccff;
 }
 
 
@@ -520,114 +495,31 @@ body.dark-mode .why-card h3 {
 ================================ */
 
 .contact-intro {
-    max-width: 700px;
-    margin: 15px auto;
+    max-width: 650px;
+
+    margin: 10px auto 20px;
+
+    padding: 0 15px;
+
     text-align: center;
-    line-height: 1.6;
-    font-size: 17px;
-    color: #555;
 }
 
 .contact-email {
     text-align: center;
+
     margin: 20px auto;
 }
 
 .contact-email a {
     color: darkblue;
-    text-decoration: none;
+
     font-weight: bold;
+
+    text-decoration: none;
 }
 
 .contact-email a:hover {
     text-decoration: underline;
-}
-
-body.dark-mode .contact-intro {
-    color: #ddd;
-}
-
-body.dark-mode .contact-email a {
-    color: #66aaff;
-}
-
-
-/* ================================
-   CONTACT FORM
-================================ */
-
-#contactForm,
-form {
-    max-width: 650px;
-    margin: 30px auto;
-    padding: 25px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-}
-
-#contactForm input,
-#contactForm textarea,
-form input,
-form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 14px;
-    margin: 10px 0;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    font-size: 16px;
-    outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-#contactForm input:focus,
-#contactForm textarea:focus,
-form input:focus,
-form textarea:focus {
-    border-color: darkblue;
-    box-shadow: 0 0 8px rgba(0, 0, 139, 0.2);
-}
-
-#contactForm button,
-form button {
-    width: 100%;
-    padding: 14px;
-    border: none;
-    border-radius: 25px;
-    background-color: darkblue;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#contactForm button:hover,
-form button:hover {
-    transform: translateY(-3px);
-    background-color: #000080;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
-}
-
-body.dark-mode #contactForm,
-body.dark-mode form {
-    background-color: #222;
-}
-
-body.dark-mode #contactForm input,
-body.dark-mode #contactForm textarea,
-body.dark-mode form input,
-body.dark-mode form textarea {
-    background-color: #333;
-    color: white;
-    border-color: #555;
-}
-
-body.dark-mode #contactForm input::placeholder,
-body.dark-mode #contactForm textarea::placeholder {
-    color: #bbb;
 }
 
 
@@ -636,50 +528,151 @@ body.dark-mode #contactForm textarea::placeholder {
 ================================ */
 
 .whatsapp-button {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 22px;
-    background-color: #25D366;
+    display: block;
+
+    width: fit-content;
+
+    margin: 20px auto 30px;
+
+    padding: 13px 22px;
+
+    background: #25D366;
+
     color: white;
+
     text-decoration: none;
-    border-radius: 25px;
+
+    border-radius: 30px;
+
     font-weight: bold;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    transition: 0.3s ease;
 }
 
 .whatsapp-button:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    opacity: 0.9;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 
 /* ================================
-   SOCIAL LINKS
+   CONTACT FORM
 ================================ */
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 15px 0 20px;
-    flex-wrap: wrap;
+#contactForm {
+    max-width: 650px;
+
+    margin: 30px auto;
+
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.social-links a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 18px;
-    border: 1px solid white;
-    border-radius: 8px;
-    font-weight: bold;
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    margin: 10px 0;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-family: inherit;
+
+    outline: none;
+
     transition: 0.3s ease;
 }
 
-.social-links a:hover {
-    background-color: white;
-    color: #111;
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: darkblue;
+
+    box-shadow:
+        0 0 8px rgba(0, 0, 139, 0.15);
+}
+
+#contactForm button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: darkblue;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#contactForm button:hover {
+    background: #000080;
+
+    transform: translateY(-2px);
+}
+
+#formMessage {
+    text-align: center;
+
+    font-weight: bold;
+
+    margin: 15px auto;
+}
+
+
+/* ================================
+   BACK TO TOP
+================================ */
+
+#topButton {
+    display: block;
+
+    margin: 30px auto;
+
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #333;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#topButton:hover {
+    background: darkblue;
+
     transform: translateY(-3px);
 }
 
@@ -690,109 +683,187 @@ body.dark-mode #contactForm textarea::placeholder {
 
 footer {
     margin-top: 60px;
-    padding: 40px 20px;
+
+    padding: 45px 20px;
+
     text-align: center;
-    background-color: #111;
+
+    background: #111827;
+
     color: white;
 }
 
 footer h3 {
     font-size: 24px;
-    margin-bottom: 20px;
 }
 
 footer p {
-    margin: 8px 0;
     font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin: 20px 0;
+}
+
+.social-links a {
+    padding: 10px 18px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid white;
+
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    background: white;
+
+    color: #111827;
+
+    transform: translateY(-3px);
 }
 
 
 /* ================================
-   MOBILE RESPONSIVE DESIGN
+   DARK MODE
+================================ */
+
+body.dark-mode {
+    background: #0f172a;
+
+    color: #f1f5f9;
+}
+
+body.dark-mode h2,
+body.dark-mode h1 {
+    color: #66ccff;
+}
+
+body.dark-mode .intro,
+body.dark-mode .about-card,
+body.dark-mode .skill,
+body.dark-mode .project-card,
+body.dark-mode .service-card,
+body.dark-mode .why-card,
+body.dark-mode #contactForm {
+    background: #1e293b;
+
+    color: #f1f5f9;
+}
+
+body.dark-mode .skill h3,
+body.dark-mode .project-card h3,
+body.dark-mode .service-card h3,
+body.dark-mode .why-card h3 {
+    color: #66ccff;
+}
+
+body.dark-mode .projects-intro {
+    color: #cbd5e1;
+}
+
+body.dark-mode .contact-email a {
+    color: #66ccff;
+}
+
+body.dark-mode .skill-bar {
+    background: #475569;
+}
+
+
+/* ================================
+   MOBILE
 ================================ */
 
 @media (max-width: 600px) {
 
     nav {
         flex-direction: column;
-        gap: 8px;
     }
 
     nav a,
     #themeButton {
         width: 90%;
+
         text-align: center;
     }
 
+    .home-section {
+        padding-top: 35px;
+    }
+
     h1 {
-        font-size: 32px;
-        margin-top: 35px;
-    }
-
-    h2 {
-        font-size: 27px;
-    }
-
-    #typingText {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .welcome-text {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .home-description {
-        padding: 0 15px;
+        font-size: 16px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
     }
 
     .cv-button,
-    .work-button {
-        display: block;
+    .work-button,
+    .hire-button {
         width: fit-content;
-        margin: 10px auto;
     }
 
-    img {
+    .profile-photo {
         width: 180px;
         height: 180px;
-        max-width: 80%;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 28px;
     }
 
     .intro,
     .about-card,
-    .service-card,
-    .project-card,
-    .why-card {
-        width: 85%;
-        box-sizing: border-box;
-    }
-
-    .skills {
-        width: 85%;
-        box-sizing: border-box;
+    .skills,
+    #contactForm {
+        width: 90%;
     }
 
     .projects,
     .services {
-        padding: 15px;
-    }
+        grid-template-columns: 1fr;
 
-    #contactForm,
-    form {
         width: 90%;
-        padding: 20px;
     }
 
-    .contact-intro {
-        padding: 0 15px;
+    .why-hire {
+        width: 90%;
+    }
+
+    .why-card {
+        width: 100%;
     }
 
     .social-links {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .social-links a {
-        width: fit-content;
     }
 }
