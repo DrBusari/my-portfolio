@@ -6,8 +6,7 @@ function toggleTheme() {
 
     document.body.classList.toggle("dark-mode");
 
-    const themeButton =
-        document.getElementById("themeButton");
+    const themeButton = document.getElementById("themeButton");
 
     if (document.body.classList.contains("dark-mode")) {
 
@@ -25,30 +24,24 @@ function toggleTheme() {
 
 
 /* ================================
-   LOAD SAVED THEME
+   REMEMBER THEME
 ================================ */
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    const themeButton =
-        document.getElementById("themeButton");
+    const savedTheme = localStorage.getItem("theme");
 
-    const savedTheme =
-        localStorage.getItem("theme");
+    const themeButton = document.getElementById("themeButton");
 
     if (savedTheme === "dark") {
 
         document.body.classList.add("dark-mode");
 
-        if (themeButton) {
-            themeButton.textContent = "☀️ Light Mode";
-        }
+        themeButton.textContent = "☀️ Light Mode";
 
     } else {
 
-        if (themeButton) {
-            themeButton.textContent = "🌙 Dark Mode";
-        }
+        themeButton.textContent = "🌙 Dark Mode";
     }
 
 });
@@ -72,15 +65,13 @@ function goToTop() {
    CONTACT FORM MESSAGE
 ================================ */
 
-const contactForm =
-    document.getElementById("contactForm");
+const contactForm = document.getElementById("contactForm");
 
 if (contactForm) {
 
     contactForm.addEventListener("submit", function () {
 
-        const formMessage =
-            document.getElementById("formMessage");
+        const formMessage = document.getElementById("formMessage");
 
         if (formMessage) {
 
