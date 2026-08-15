@@ -5,34 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PAYHINT - Web Developer</title>
+    <title>PAYHINT | Web Developer & Designer</title>
+
+    <meta name="description"
+        content="PAYHINT is a web developer, designer, Roblox developer, app developer and graphics designer creating modern digital experiences.">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================================
-         NAVIGATION
-    ================================= -->
-
+    <!-- NAVIGATION -->
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
 
-        <button id="themeButton" onclick="toggleTheme()">
-            🌙 Dark Mode
-        </button>
+            <button id="themeButton" onclick="toggleTheme()">
+                🌙 Dark Mode
+            </button>
+        </div>
     </nav>
 
 
-    <!-- ================================
-         HOME
-    ================================= -->
-
+    <!-- HOME -->
     <section id="home" class="home-section">
 
         <h1>
@@ -40,18 +39,21 @@
         </h1>
 
         <p class="welcome-text">
-            Web Developer • Designer • Computer Science Student
+            Web Developer • Designer • Roblox Developer • App Developer • Graphics Designer
         </p>
 
         <p class="home-description">
-            I build simple, modern and responsive websites using
-            HTML, CSS and JavaScript.
+            I build simple, modern and responsive websites using HTML, CSS and JavaScript.
+            I also create Roblox projects, mobile apps, and creative graphic designs.
         </p>
 
+        <p class="portfolio-tagline">
+            Turning ideas into creative digital experiences.
+        </p>
 
         <div class="home-buttons">
 
-            <a href="cv.pdf" target="_blank" class="cv-button">
+            <a href="cv.pdf" download class="cv-button">
                 ↓ Download My CV
             </a>
 
@@ -66,11 +68,7 @@
         </div>
 
 
-        <img
-            src="photo.jpg.jfif"
-            alt="PAYHINT - Web Developer"
-            class="profile-photo"
-        >
+        <img src="photo.jpg.jfif" alt="PAYHINT - Web Developer">
 
 
         <p class="availability">
@@ -80,14 +78,11 @@
 
         <div class="intro">
 
-            <h2>
-                Hello! I'm PAYHINT 👋
-            </h2>
+            <h2>Hello! I'm PAYHINT 👋</h2>
 
             <p>
-                I am a computer science student passionate about
-                web development. I enjoy creating websites and
-                learning new technologies.
+                I am a computer science student passionate about technology,
+                web development and creative digital projects.
             </p>
 
         </div>
@@ -95,10 +90,7 @@
     </section>
 
 
-    <!-- ================================
-         ABOUT
-    ================================= -->
-
+    <!-- ABOUT -->
     <section id="about">
 
         <h2>About Me</h2>
@@ -106,15 +98,20 @@
         <div class="about-card">
 
             <p>
-                I am a computer science student passionate about
-                technology and web development. I enjoy creating
-                websites, learning new programming skills, and
-                building useful digital projects.
+                I am a computer science student passionate about technology,
+                web development and digital creativity.
             </p>
 
             <p>
-                My goal is to continue improving my skills and
-                become a professional web developer.
+                I enjoy creating websites, learning new programming skills,
+                developing Roblox projects, exploring app development and
+                creating attractive graphic designs.
+            </p>
+
+            <p>
+                My goal is to continue improving my skills and become a
+                professional developer who creates useful and creative
+                digital solutions.
             </p>
 
         </div>
@@ -122,10 +119,7 @@
     </section>
 
 
-    <!-- ================================
-         SKILLS
-    ================================= -->
-
+    <!-- SKILLS -->
     <section id="skills">
 
         <h2>My Skills</h2>
@@ -133,32 +127,30 @@
         <div class="skills">
 
             <div class="skill">
-
                 <h3>
-                    <span>HTML</span>
+                    HTML
                     <span>85%</span>
                 </h3>
 
                 <p>
-                    Building the structure of websites.
+                    Building the structure of modern websites.
                 </p>
 
                 <div class="skill-bar">
                     <div class="skill-progress html-progress"></div>
                 </div>
-
             </div>
 
 
             <div class="skill">
 
                 <h3>
-                    <span>CSS</span>
+                    CSS
                     <span>75%</span>
                 </h3>
 
                 <p>
-                    Designing and styling websites.
+                    Designing attractive and responsive websites.
                 </p>
 
                 <div class="skill-bar">
@@ -171,12 +163,12 @@
             <div class="skill">
 
                 <h3>
-                    <span>JavaScript</span>
+                    JavaScript
                     <span>60%</span>
                 </h3>
 
                 <p>
-                    Adding interaction and functionality.
+                    Adding interaction and functionality to websites.
                 </p>
 
                 <div class="skill-bar">
@@ -190,37 +182,25 @@
     </section>
 
 
-    <!-- ================================
-         PROJECTS
-    ================================= -->
-
+    <!-- PROJECTS -->
     <section id="projects">
 
         <h2>My Projects</h2>
 
         <p class="projects-intro">
-            Here are some of the projects I have worked on
-            and continue to improve.
+            Here are some of the projects I have worked on and continue to improve.
         </p>
 
 
         <div class="projects">
 
-
             <div class="project-card">
 
-                <div class="project-icon">
-                    🌐
-                </div>
-
-                <h3>
-                    Personal Portfolio Website
-                </h3>
+                <h3>🌐 Personal Portfolio Website</h3>
 
                 <p>
-                    A responsive personal portfolio website built
-                    with HTML, CSS and JavaScript to showcase my
-                    skills and services.
+                    A responsive personal portfolio website built with
+                    HTML, CSS and JavaScript to showcase my skills and services.
                 </p>
 
                 <a href="#home">
@@ -232,17 +212,11 @@
 
             <div class="project-card">
 
-                <div class="project-icon">
-                    📄
-                </div>
-
-                <h3>
-                    CV Download System
-                </h3>
+                <h3>📄 CV Download System</h3>
 
                 <p>
-                    A simple CV download feature that allows
-                    visitors to view and download my professional CV.
+                    A simple CV download feature that allows visitors
+                    to view and download my professional CV.
                 </p>
 
                 <a href="cv.pdf" target="_blank">
@@ -254,17 +228,11 @@
 
             <div class="project-card">
 
-                <div class="project-icon">
-                    💬
-                </div>
-
-                <h3>
-                    Contact System
-                </h3>
+                <h3>💬 Contact System</h3>
 
                 <p>
-                    A contact system that allows visitors to send
-                    messages through my portfolio website.
+                    A contact system that allows visitors to send messages
+                    through my portfolio website.
                 </p>
 
                 <a href="#contact">
@@ -278,30 +246,19 @@
     </section>
 
 
-    <!-- ================================
-         SERVICES
-    ================================= -->
-
+    <!-- SERVICES -->
     <section id="services">
 
         <h2>My Services</h2>
 
-
         <div class="services">
-
 
             <div class="service-card">
 
-                <div class="service-icon">
-                    🎨
-                </div>
-
-                <h3>
-                    Web Design
-                </h3>
+                <h3>🎨 Web Design</h3>
 
                 <p>
-                    I can create clean and attractive websites
+                    I create clean, attractive and responsive websites
                     using HTML and CSS.
                 </p>
 
@@ -310,17 +267,11 @@
 
             <div class="service-card">
 
-                <div class="service-icon">
-                    ⚡
-                </div>
-
-                <h3>
-                    JavaScript
-                </h3>
+                <h3>⚡ JavaScript</h3>
 
                 <p>
-                    I can add interactive features to websites
-                    using JavaScript.
+                    I add interactive features and functionality
+                    to websites using JavaScript.
                 </p>
 
             </div>
@@ -328,17 +279,47 @@
 
             <div class="service-card">
 
-                <div class="service-icon">
-                    💻
-                </div>
-
-                <h3>
-                    Website Development
-                </h3>
+                <h3>🎮 Roblox Development</h3>
 
                 <p>
-                    I can build simple websites that work well
-                    on computers and phones.
+                    I create and develop creative Roblox projects
+                    and experiences.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>📱 App Development</h3>
+
+                <p>
+                    I am learning and developing useful mobile
+                    application ideas.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>🖼️ Graphics Design</h3>
+
+                <p>
+                    I create simple and creative graphics for
+                    digital projects and personal brands.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>💻 Website Development</h3>
+
+                <p>
+                    I build websites that work well on computers,
+                    tablets and mobile phones.
                 </p>
 
             </div>
@@ -348,32 +329,19 @@
     </section>
 
 
-    <!-- ================================
-         WHY HIRE ME
-    ================================= -->
-
+    <!-- WHY HIRE ME -->
     <section class="why-hire">
 
-        <h2>
-            Why Hire Me?
-        </h2>
-
+        <h2>Why Hire Me?</h2>
 
         <div class="why-hire-cards">
 
-
             <div class="why-card">
 
-                <div class="why-icon">
-                    💡
-                </div>
-
-                <h3>
-                    Creative
-                </h3>
+                <h3>💡 Creative</h3>
 
                 <p>
-                    I create clean and modern website designs.
+                    I create clean and modern digital designs.
                 </p>
 
             </div>
@@ -381,13 +349,7 @@
 
             <div class="why-card">
 
-                <div class="why-icon">
-                    📱
-                </div>
-
-                <h3>
-                    Responsive
-                </h3>
+                <h3>📱 Responsive</h3>
 
                 <p>
                     I build websites that work well on phones
@@ -399,13 +361,7 @@
 
             <div class="why-card">
 
-                <div class="why-icon">
-                    ⚡
-                </div>
-
-                <h3>
-                    Reliable
-                </h3>
+                <h3>⚡ Reliable</h3>
 
                 <p>
                     I am committed to learning, improving and
@@ -419,16 +375,10 @@
     </section>
 
 
-    <!-- ================================
-         CONTACT
-    ================================= -->
-
+    <!-- CONTACT -->
     <section id="contact">
 
-        <h2>
-            Contact Me
-        </h2>
-
+        <h2>Contact Me</h2>
 
         <p class="contact-intro">
             Have a question or want to work with me?
@@ -450,13 +400,15 @@
         <a
             href="https://wa.me/2348104997370?text=Hello%20PAYHINT%2C%20I%20found%20your%20website%20and%20I'd%20like%20to%20know%20more%20about%20your%20services."
             class="whatsapp-button"
-            target="_blank">
+            target="_blank"
+            rel="noopener">
 
             💬 Contact Me on WhatsApp
 
         </a>
 
 
+        <!-- CONTACT FORM -->
         <form
             id="contactForm"
             action="https://formspree.io/f/xoealazl"
@@ -466,22 +418,21 @@
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                required
-            >
+                required>
+
 
             <input
                 type="email"
                 name="email"
                 placeholder="Your Email"
-                required
-            >
+                required>
+
 
             <textarea
                 name="message"
                 placeholder="Your Message"
-                rows="6"
-                required
-            ></textarea>
+                rows="5"
+                required></textarea>
 
 
             <button type="submit">
@@ -496,47 +447,27 @@
     </section>
 
 
-    <!-- ================================
-         BACK TO TOP
-    ================================= -->
-
-    <button
-        id="topButton"
-        onclick="goToTop()">
-
-        ↑ Back to Top
-
-    </button>
-
-
-    <!-- ================================
-         FOOTER
-    ================================= -->
-
+    <!-- FOOTER -->
     <footer>
 
-        <h3>
-            Connect With Me
-        </h3>
+        <h3>Connect With Me</h3>
 
 
         <div class="social-links">
 
             <a
                 href="https://www.facebook.com/share/195squ4Nqe/?mibextid=wwXIfr"
-                target="_blank">
-
+                target="_blank"
+                rel="noopener">
                 Facebook
-
             </a>
 
 
             <a
                 href="https://github.com/DrBusari"
-                target="_blank">
-
+                target="_blank"
+                rel="noopener">
                 GitHub
-
             </a>
 
         </div>
@@ -549,6 +480,13 @@
         <p>
             Built with HTML, CSS and JavaScript.
         </p>
+
+
+        <button
+            id="topButton"
+            onclick="goToTop()">
+            ↑ Back to Top
+        </button>
 
     </footer>
 
