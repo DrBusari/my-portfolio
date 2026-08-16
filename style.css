@@ -11,18 +11,18 @@ body {
     font-family: Arial, sans-serif;
     background-color: lightblue;
     color: #222;
-    text-align: center;
     line-height: 1.6;
 }
 
 section {
     padding: 60px 20px;
+    text-align: center;
 }
 
 h1 {
     color: darkblue;
     font-size: 42px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 h2 {
@@ -40,20 +40,13 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    text-align: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 12px;
     font-size: 17px;
     font-weight: bold;
 }
@@ -63,28 +56,25 @@ nav a:hover {
 }
 
 #themeButton {
-    border: 2px solid white;
     background: transparent;
     color: white;
-    padding: 9px 15px;
-    border-radius: 20px;
+    border: 2px solid white;
+    padding: 9px 16px;
+    border-radius: 25px;
     cursor: pointer;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 
 /* HOME */
 
-.home-section {
-    min-height: 90vh;
-}
-
 .welcome-text {
-    max-width: 950px;
-    margin: 15px auto;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: bold;
     color: #333;
+    max-width: 950px;
+    margin: 15px auto;
 }
 
 .home-description {
@@ -93,18 +83,9 @@ nav a:hover {
     font-size: 18px;
 }
 
-.availability {
-    font-weight: bold;
-    color: #168a3a;
-}
-
-
-/* BUTTONS */
-
 .home-buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 12px;
     margin: 25px auto;
@@ -118,7 +99,7 @@ nav a:hover {
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .cv-button {
@@ -143,7 +124,7 @@ nav a:hover {
 }
 
 
-/* PROFILE PHOTO */
+/* PROFILE */
 
 .profile {
     display: block;
@@ -156,20 +137,21 @@ nav a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.availability {
+    color: #168a3a;
+    font-weight: bold;
+}
+
 
 /* INTRO */
 
 .intro {
     background-color: white;
-    max-width: 750px;
+    max-width: 800px;
     margin: 30px auto;
-    padding: 25px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-.intro h2 {
-    margin-top: 0;
 }
 
 
@@ -201,29 +183,26 @@ nav a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* THIS FIXES HTML85% */
-
 .skill h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    margin: 0 0 8px 0;
+    margin: 0 0 10px 0;
     color: darkblue;
     gap: 20px;
 }
 
-.skill h3 span {
-    display: inline-block;
+.skill h3 span:last-child {
     margin-left: auto;
-    padding-left: 20px;
     white-space: nowrap;
-    font-weight: bold;
 }
 
 .skill p {
-    margin-top: 5px;
+    margin: 10px 0 0 0;
 }
+
+
+/* ALL SKILL BARS */
 
 .skill-bar {
     width: 100%;
@@ -239,6 +218,9 @@ nav a:hover {
     border-radius: 20px;
 }
 
+
+/* SKILL PERCENTAGES */
+
 .html-progress {
     width: 85%;
 }
@@ -249,6 +231,22 @@ nav a:hover {
 
 .js-progress {
     width: 70%;
+}
+
+.uiux-progress {
+    width: 70%;
+}
+
+.roblox-progress {
+    width: 65%;
+}
+
+.graphic-progress {
+    width: 65%;
+}
+
+.app-progress {
+    width: 60%;
 }
 
 
@@ -272,7 +270,7 @@ nav a:hover {
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .project-card:hover {
@@ -316,12 +314,7 @@ nav a:hover {
 }
 
 
-/* WHY HIRE ME */
-
-.why-hire {
-    max-width: 1000px;
-    margin: auto;
-}
+/* WHY HIRE */
 
 .why-hire-cards {
     display: flex;
@@ -348,10 +341,6 @@ nav a:hover {
 .contact-intro {
     max-width: 650px;
     margin: auto;
-}
-
-.contact-email {
-    margin: 20px auto;
 }
 
 .contact-email a {
@@ -414,6 +403,7 @@ footer {
     padding: 40px 20px;
     background-color: #111;
     color: white;
+    text-align: center;
 }
 
 .social-links {
@@ -432,6 +422,13 @@ footer {
     border-radius: 8px;
 }
 
+#topButton {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 
 /* DARK MODE */
 
@@ -446,7 +443,7 @@ body.dark-mode h2 {
 }
 
 body.dark-mode .welcome-text {
-    color: #eee;
+    color: white;
 }
 
 body.dark-mode .intro,
@@ -472,10 +469,13 @@ body.dark-mode .why-card h3 {
 
 @media (max-width: 600px) {
 
-    nav a,
-    #themeButton {
+    nav a {
         display: inline-block;
         margin: 5px;
+    }
+
+    #themeButton {
+        margin-top: 8px;
     }
 
     h1 {
@@ -486,19 +486,13 @@ body.dark-mode .why-card h3 {
         font-size: 27px;
     }
 
-    .welcome-text {
-        font-size: 17px;
-    }
-
     .profile {
         width: 180px;
         height: 180px;
     }
 
-    .intro,
-    .about-card,
-    #contactForm {
-        width: 90%;
+    .skill h3 {
+        font-size: 18px;
     }
 
     .projects,
@@ -506,11 +500,13 @@ body.dark-mode .why-card h3 {
         width: 90%;
     }
 
-    .why-card {
+    .about-card,
+    .intro,
+    #contactForm {
         width: 90%;
     }
 
-    .skill h3 {
-        font-size: 18px;
+    .why-card {
+        width: 90%;
     }
 }
