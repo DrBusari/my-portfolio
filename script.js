@@ -1,5 +1,3 @@
-/* ================= DARK MODE ================= */
-
 function toggleTheme() {
 
     document.body.classList.toggle("dark-mode");
@@ -7,18 +5,14 @@ function toggleTheme() {
     const button = document.getElementById("themeButton");
 
     if (document.body.classList.contains("dark-mode")) {
-
         button.textContent = "☀️";
-
     } else {
-
         button.textContent = "🌙";
-
     }
 }
 
 
-/* ================= CONTACT FORM ================= */
+/* CONTACT FORM */
 
 const contactForm = document.getElementById("contactForm");
 
@@ -33,5 +27,4 @@ if (contactForm) {
         contactForm.reset();
 
     });
-
 }
