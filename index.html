@@ -1,112 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PAYHINT | Developer Portfolio</title>
+    <title>Dr Busari | Web Developer</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar">
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav class="navbar">
 
-        <div class="logo">
-            PAY<span>HINT</span>
-        </div>
+            <div class="logo">
+                PAYHINT
+            </div>
 
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-        <button id="themeButton" onclick="toggleTheme()">
-            🌙
-        </button>
+            <button id="themeButton" class="theme-button" onclick="toggleTheme()">
+                🌙
+            </button>
 
-    </nav>
+        </nav>
+    </header>
 
 
-    <!-- HERO -->
+    <!-- ================= HERO ================= -->
     <section id="home" class="hero">
 
         <div class="hero-content">
 
-            <p class="available">
-                🟢 AVAILABLE FOR WORK
-            </p>
-
-            <p class="small-title">
-                HELLO, I'M
-            </p>
+            <p class="hero-small">WELCOME TO MY PORTFOLIO</p>
 
             <h1>
-                PAY<span>HINT</span>
+                Hi, I'm <span>Dr Busari</span>
             </h1>
 
             <h2>
-                Web Developer & UI/UX Designer
+                Web Developer • UI/UX Designer • Roblox Developer
             </h2>
 
             <p class="hero-text">
                 I create modern, responsive and user-friendly digital
-                experiences using HTML, CSS, JavaScript and creative design.
+                experiences using technology and creative design.
             </p>
 
             <div class="hero-buttons">
 
-                <a href="#projects" class="primary-btn">
+                <a href="#projects" class="btn primary-btn">
                     View My Work
                 </a>
 
-                <a href="#contact" class="secondary-btn">
+                <a href="#contact" class="btn secondary-btn">
                     Hire Me
                 </a>
 
-                <a href="Dr_Busari_CV_New.pdf" download class="secondary-btn">
-                    ↓ Download CV
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="hero-card">
-
-            <div class="code-box">
-
-                <p>&lt;developer&gt;</p>
-
-                <p class="code-name">
-                    PAYHINT
-                </p>
-
-                <p>
-                    Web Developer
-                </p>
-
-                <p>
-                    UI/UX Designer
-                </p>
-
-                <p>
-                    Roblox Developer
-                </p>
-
-                <p>
-                    App Developer
-                </p>
-
-                <p>&lt;/developer&gt;</p>
-
             </div>
 
         </div>
@@ -114,54 +73,204 @@
     </section>
 
 
-    <!-- ABOUT -->
+    <!-- ================= ABOUT ================= -->
     <section id="about" class="section">
 
-        <div class="section-title">
-            <p>GET TO KNOW ME</p>
-            <h2>About <span>Me</span></h2>
-        </div>
+        <div class="container">
 
-        <div class="about-grid">
+            <h2 class="section-title">About Me</h2>
 
-            <div class="about-card">
+            <p class="section-intro">
+                A passionate Computer Science student and aspiring developer
+                interested in building useful, attractive and responsive
+                digital products.
+            </p>
 
-                <h3>Hello! I'm PAYHINT 👋</h3>
+            <div class="about-grid">
 
-                <p>
-                    I am a Computer Science student and aspiring professional
-                    developer with a passion for technology, web development,
-                    UI/UX design and digital creativity.
-                </p>
+                <div class="about-card">
 
-                <p>
-                    I enjoy transforming ideas into clean, functional and
-                    attractive digital experiences while continuously learning
-                    new technologies.
-                </p>
+                    <div class="about-icon">
+                        💻
+                    </div>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        I build responsive and modern websites using
+                        HTML, CSS and JavaScript.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="about-icon">
+                        🎨
+                    </div>
+
+                    <h3>Creative Design</h3>
+
+                    <p>
+                        I enjoy creating clean interfaces that are simple,
+                        attractive and easy to use.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="about-icon">
+                        🚀
+                    </div>
+
+                    <h3>Problem Solving</h3>
+
+                    <p>
+                        I use technology and creativity to solve problems
+                        and create useful digital experiences.
+                    </p>
+
+                </div>
 
             </div>
 
-            <div class="stats-grid">
+        </div>
 
-                <div class="stat-card">
-                    <h3>7+</h3>
-                    <p>Skills</p>
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section light-section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                My Skills
+            </h2>
+
+            <p class="section-intro">
+                Here are some of the technologies and creative skills
+                I use to build modern digital experiences.
+            </p>
+
+
+            <div class="skills-grid">
+
+
+                <!-- HTML -->
+                <div class="skill-card">
+
+                    <div class="skill-heading">
+                        <h3>🌐 HTML</h3>
+                        <span>90%</span>
+                    </div>
+
+                    <p>
+                        Creating clean and well-structured websites.
+                    </p>
+
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+
                 </div>
 
-                <div class="stat-card">
-                    <h3>6+</h3>
-                    <p>Projects</p>
+
+                <!-- CSS -->
+                <div class="skill-card">
+
+                    <div class="skill-heading">
+                        <h3>🎨 CSS</h3>
+                        <span>85%</span>
+                    </div>
+
+                    <p>
+                        Designing responsive and attractive websites.
+                    </p>
+
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+
                 </div>
 
-                <div class="stat-card">
-                    <h3>6+</h3>
-                    <p>Services</p>
+
+                <!-- JavaScript -->
+                <div class="skill-card">
+
+                    <div class="skill-heading">
+                        <h3>⚡ JavaScript</h3>
+                        <span>75%</span>
+                    </div>
+
+                    <p>
+                        Adding interactive features and functionality.
+                    </p>
+
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+
                 </div>
 
-                <div class="stat-card">
-                    <h3>100%</h3>
-                    <p>Passion</p>
+
+                <!-- UI UX -->
+                <div class="skill-card">
+
+                    <div class="skill-heading">
+                        <h3>🖌️ UI/UX Design</h3>
+                        <span>80%</span>
+                    </div>
+
+                    <p>
+                        Creating simple and user-friendly interfaces.
+                    </p>
+
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+
+                </div>
+
+
+                <!-- Roblox -->
+                <div class="skill-card">
+
+                    <div class="skill-heading">
+                        <h3>🎮 Roblox Development</h3>
+                        <span>70%</span>
+                    </div>
+
+                    <p>
+                        Creating interactive Roblox experiences and interfaces.
+                    </p>
+
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+
+                </div>
+
+
+                <!-- App Development -->
+                <div class="skill-card">
+
+                    <div class="skill-heading">
+                        <h3>📱 App Development</h3>
+                        <span>65%</span>
+                    </div>
+
+                    <p>
+                        Building useful and user-friendly applications.
+                    </p>
+
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+
                 </div>
 
             </div>
@@ -171,230 +280,88 @@
     </section>
 
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-
-        <div class="section-title">
-            <p>MY EXPERTISE</p>
-            <h2>My <span>Skills</span></h2>
-        </div>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <div class="skill-top">
-                    <h3>HTML</h3>
-                    <span>85%</span>
-                </div>
-                <div class="progress">
-                    <div style="width: 85%;"></div>
-                </div>
-                <p>Building structured and responsive websites.</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-top">
-                    <h3>CSS</h3>
-                    <span>80%</span>
-                </div>
-                <div class="progress">
-                    <div style="width: 80%;"></div>
-                </div>
-                <p>Creating modern and attractive website designs.</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-top">
-                    <h3>JavaScript</h3>
-                    <span>70%</span>
-                </div>
-                <div class="progress">
-                    <div style="width: 70%;"></div>
-                </div>
-                <p>Adding interaction and dynamic functionality.</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-top">
-                    <h3>UI/UX Design</h3>
-                    <span>70%</span>
-                </div>
-                <div class="progress">
-                    <div style="width: 70%;"></div>
-                </div>
-                <p>Designing simple and user-friendly interfaces.</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-top">
-                    <h3>Roblox Development</h3>
-                    <span>65%</span>
-                </div>
-                <div class="progress">
-                    <div style="width: 65%;"></div>
-                </div>
-                <p>Creating interactive Roblox experiences.</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-top">
-                    <h3>Graphic Design</h3>
-                    <span>65%</span>
-                </div>
-                <div class="progress">
-                    <div style="width: 65%;"></div>
-                </div>
-                <p>Creating creative visual designs.</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-top">
-                    <h3>App Development</h3>
-                    <span>60%</span>
-                </div>
-                <div class="progress">
-                    <div style="width: 60%;"></div>
-                </div>
-                <p>Exploring useful application concepts.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
+    <!-- ================= PROJECTS ================= -->
     <section id="projects" class="section">
 
-        <div class="section-title">
-            <p>MY RECENT WORK</p>
-            <h2>Featured <span>Projects</span></h2>
-        </div>
+        <div class="container">
 
-        <div class="projects-grid">
+            <h2 class="section-title">
+                My Projects
+            </h2>
 
-            <div class="project-card">
-                <div class="project-icon">🌐</div>
-                <h3>Personal Portfolio</h3>
-                <p>
-                    A modern responsive portfolio built with HTML, CSS
-                    and JavaScript.
-                </p>
-                <a href="#home">View Project →</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon">🎮</div>
-                <h3>Roblox Development</h3>
-                <p>
-                    Interactive Roblox experiences and creative game concepts.
-                </p>
-                <a href="#contact">Discuss Project →</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon">🎨</div>
-                <h3>UI/UX Design</h3>
-                <p>
-                    Clean and intuitive interfaces focused on usability.
-                </p>
-                <a href="#contact">Discuss Project →</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon">🖌️</div>
-                <h3>Graphic Design</h3>
-                <p>
-                    Creative designs for branding, digital content and projects.
-                </p>
-                <a href="#contact">Discuss Project →</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon">📱</div>
-                <h3>App Development</h3>
-                <p>
-                    Useful application concepts designed to solve problems.
-                </p>
-                <a href="#contact">Discuss Project →</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon">💻</div>
-                <h3>Web Development</h3>
-                <p>
-                    Responsive websites for computers, tablets and phones.
-                </p>
-                <a href="#contact">Discuss Project →</a>
-            </div>
-
-        </div>
-
-    </section>
+            <p class="section-intro">
+                Some of the projects and digital experiences I have worked on.
+            </p>
 
 
-    <!-- SERVICES -->
-    <section id="services" class="section">
+            <div class="projects-grid">
 
-        <div class="section-title">
-            <p>WHAT I DO</p>
-            <h2>My <span>Services</span></h2>
-        </div>
 
-        <div class="services-grid">
+                <div class="project-card">
 
-            <div class="service-card">
-                <div class="service-icon">🌐</div>
-                <h3>Web Development</h3>
-                <p>
-                    Modern, responsive and user-friendly websites using
-                    HTML, CSS and JavaScript.
-                </p>
-            </div>
+                    <div class="project-icon">
+                        🌐
+                    </div>
 
-            <div class="service-card">
-                <div class="service-icon">🎨</div>
-                <h3>UI/UX Design</h3>
-                <p>
-                    Clean interfaces designed for simple navigation
-                    and enjoyable experiences.
-                </p>
-            </div>
+                    <h3>My Portfolio Website</h3>
 
-            <div class="service-card">
-                <div class="service-icon">🎮</div>
-                <h3>Roblox Development</h3>
-                <p>
-                    Interactive Roblox experiences, game concepts
-                    and user interfaces.
-                </p>
-            </div>
+                    <p>
+                        A modern responsive portfolio website designed
+                        to showcase my skills, services and projects.
+                    </p>
 
-            <div class="service-card">
-                <div class="service-icon">🖌️</div>
-                <h3>Graphic Design</h3>
-                <p>
-                    Creative visual designs for digital content,
-                    branding and online projects.
-                </p>
-            </div>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
 
-            <div class="service-card">
-                <div class="service-icon">📱</div>
-                <h3>App Development</h3>
-                <p>
-                    Useful application concepts focused on solving
-                    real-world problems.
-                </p>
-            </div>
+                </div>
 
-            <div class="service-card">
-                <div class="service-icon">⚡</div>
-                <h3>JavaScript Development</h3>
-                <p>
-                    Interactive features, animations and dynamic
-                    website functionality.
-                </p>
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        🎮
+                    </div>
+
+                    <h3>Roblox Project</h3>
+
+                    <p>
+                        An interactive Roblox project focused on gameplay,
+                        creativity and user experience.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Roblox</span>
+                        <span>UI</span>
+                        <span>Game</span>
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        📱
+                    </div>
+
+                    <h3>Mobile App Concept</h3>
+
+                    <p>
+                        A clean application concept designed around
+                        simplicity, usability and modern interfaces.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>App</span>
+                        <span>UI/UX</span>
+                        <span>Design</span>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
@@ -402,48 +369,120 @@
     </section>
 
 
-    <!-- WHY HIRE ME -->
-    <section class="section">
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="section light-section">
 
-        <div class="section-title">
-            <p>WHY WORK WITH ME</p>
-            <h2>Why <span>Hire Me?</span></h2>
-        </div>
+        <div class="container">
 
-        <div class="why-grid">
+            <h2 class="section-title">
+                My Services
+            </h2>
 
-            <div class="why-card">
-                <span>💡</span>
-                <h3>Creative</h3>
-                <p>
-                    I turn ideas into clean, modern and engaging
-                    digital experiences.
-                </p>
-            </div>
+            <p class="section-intro">
+                I provide creative and digital development services
+                designed to help individuals and businesses build
+                a strong online presence.
+            </p>
 
-            <div class="why-card">
-                <span>📱</span>
-                <h3>Responsive</h3>
-                <p>
-                    I create websites that work smoothly on all devices.
-                </p>
-            </div>
 
-            <div class="why-card">
-                <span>⚡</span>
-                <h3>Fast Learner</h3>
-                <p>
-                    I continuously learn new technologies and improve
-                    my skills.
-                </p>
-            </div>
+            <div class="services-grid">
 
-            <div class="why-card">
-                <span>🎯</span>
-                <h3>Professional</h3>
-                <p>
-                    I work with attention to detail and commitment to quality.
-                </p>
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        🌐
+                    </div>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        I build modern, responsive and user-friendly
+                        websites using HTML, CSS and JavaScript.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        🎨
+                    </div>
+
+                    <h3>UI/UX Design</h3>
+
+                    <p>
+                        I design clean and intuitive interfaces that
+                        make digital products simple and enjoyable to use.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        🎮
+                    </div>
+
+                    <h3>Roblox Development</h3>
+
+                    <p>
+                        I create interactive Roblox experiences,
+                        game concepts and user interfaces.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        📱
+                    </div>
+
+                    <h3>App Development</h3>
+
+                    <p>
+                        I create useful application concepts with
+                        simple and user-friendly interfaces.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        🖼️
+                    </div>
+
+                    <h3>Graphic Design</h3>
+
+                    <p>
+                        I create clean and creative visual designs
+                        for digital projects and brands.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        💡
+                    </div>
+
+                    <h3>Digital Solutions</h3>
+
+                    <p>
+                        I use technology and creativity to develop
+                        solutions for digital needs.
+                    </p>
+
+                </div>
+
             </div>
 
         </div>
@@ -451,126 +490,134 @@
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- ================= CONTACT ================= -->
     <section id="contact" class="section">
 
-        <div class="section-title">
-            <p>LET'S WORK TOGETHER</p>
-            <h2>Contact <span>Me</span></h2>
-        </div>
+        <div class="container">
 
-        <div class="contact-grid">
+            <h2 class="section-title">
+                Contact Me
+            </h2>
 
-            <div class="contact-info">
+            <p class="section-intro">
+                Have a project in mind? Let's work together.
+            </p>
 
-                <h3>Have a project in mind?</h3>
 
-                <p>
-                    Have a project, business idea or opportunity?
-                    I'd love to hear from you.
-                </p>
+            <div class="contact-grid">
 
-                <div class="contact-item">
-                    <span>📧</span>
-                    <div>
-                        <strong>Email</strong>
-                        <p>
-                            busariquyumolamilekan@gmail.com
-                        </p>
+
+                <!-- CONTACT INFORMATION -->
+                <div class="contact-info">
+
+                    <h3>Let's Talk</h3>
+
+                    <p>
+                        Feel free to contact me about websites, design,
+                        development or other digital projects.
+                    </p>
+
+
+                    <div class="contact-item">
+
+                        <span>📧</span>
+
+                        <div>
+                            <strong>Email</strong>
+                            <p>
+                                <a href="mailto:busariquyumolamilekan@gmail.com">
+                                    busariquyumolamilekan@gmail.com
+                                </a>
+                            </p>
+                        </div>
+
                     </div>
+
+
+                    <div class="contact-item">
+
+                        <span>💬</span>
+
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <p>
+                                Chat with me directly on WhatsApp.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="https://wa.me/234XXXXXXXXXX"
+                        target="_blank"
+                        class="whatsapp-btn"
+                    >
+                        💬 Chat with me on WhatsApp
+                    </a>
+
                 </div>
 
-                <div class="contact-item">
-                    <span>💬</span>
-                    <div>
-                        <strong>WhatsApp</strong>
-                        <p>
-                            <a
-                                href="https://wa.me/2348104997370"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Chat with me on WhatsApp
-                            </a>
-                        </p>
-                    </div>
-                </div>
+
+                <!-- CONTACT FORM -->
+                <form id="contactForm">
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                        required
+                    >
+
+                    <textarea
+                        name="message"
+                        rows="6"
+                        placeholder="Your Message"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn primary-btn">
+                        Send Message
+                    </button>
+
+                </form>
 
             </div>
-
-
-            <form
-                id="contactForm"
-                action="https://formspree.io/f/xqeyvvod"
-                method="POST"
-            >
-
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    required
-                >
-
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    required
-                >
-
-                <textarea
-                    name="message"
-                    rows="7"
-                    placeholder="Your Message"
-                    required
-                ></textarea>
-
-                <button type="submit" class="primary-btn">
-                    Send Message →
-                </button>
-
-            </form>
 
         </div>
 
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
     <footer>
 
-        <div class="footer-logo">
-            PAY<span>HINT</span>
-        </div>
-
         <p>
-            Web Developer • UI/UX Designer • Roblox Developer
+            © 2026 Dr Busari. All Rights Reserved.
         </p>
 
-        <div class="social-links">
-
-            <a href="#" target="_blank">Facebook</a>
-
-            <a href="#" target="_blank">GitHub</a>
-
-        </div>
-
-        <p class="copyright">
-            © 2026 PAYHINT. All Rights Reserved.
-        </p>
+        <a href="#home">
+            ↑ Back to Top
+        </a>
 
     </footer>
-
-
-    <!-- BACK TO TOP -->
-    <a href="#home" class="back-top">
-        ↑
-    </a>
 
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
