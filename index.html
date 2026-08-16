@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,14 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- ================= NAVIGATION ================= -->
+
     <header>
         <nav class="navbar">
 
-            <div class="logo">PAYHINT</div>
+            <a href="#home" class="logo">
+                PAY<span>HINT</span>
+            </a>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -26,7 +30,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <button id="themeButton" class="theme-button" onclick="toggleTheme()">
+            <button
+                id="themeButton"
+                class="theme-button"
+                onclick="toggleTheme()"
+                aria-label="Toggle dark mode"
+            >
                 🌙
             </button>
 
@@ -35,23 +44,27 @@
 
 
     <!-- ================= HERO ================= -->
+
     <section id="home" class="hero">
 
         <div class="hero-content">
 
-            <p class="hero-small">WELCOME TO PAYHINT</p>
+            <div class="hero-badge">
+                🚀 Welcome to PAYHINT
+            </div>
 
             <h1>
-                Hi, I'm <span>PAYHINT</span>
+                Building the
+                <span>Digital Future</span>
             </h1>
 
             <h2>
-                Web Developer • UI/UX Designer • Roblox Developer
+                Web Developer • UI/UX Designer • Computer Science Student
             </h2>
 
             <p class="hero-text">
-                I create modern, responsive and user-friendly digital
-                experiences using technology and creative design.
+                I create modern, responsive and user-friendly websites
+                and digital experiences that turn ideas into reality.
             </p>
 
             <div class="hero-buttons">
@@ -64,11 +77,15 @@
                     Hire Me
                 </a>
 
-                <!-- CV BUTTON -->
                 <a href="cv.pdf" download class="btn cv-button">
                     📄 Download My CV
                 </a>
 
+            </div>
+
+            <div class="hero-scroll">
+                <span>Scroll to explore</span>
+                <span>↓</span>
             </div>
 
         </div>
@@ -77,45 +94,90 @@
 
 
     <!-- ================= ABOUT ================= -->
+
     <section id="about" class="section">
 
         <div class="container">
 
-            <h2 class="section-title">About PAYHINT</h2>
+            <div class="section-heading">
+                <span class="section-label">ABOUT ME</span>
 
-            <p class="section-intro">
-                PAYHINT is focused on creating useful, attractive and
-                responsive digital experiences through technology,
-                creativity and modern design.
-            </p>
+                <h2>
+                    Turning Ideas Into
+                    <span>Digital Experiences</span>
+                </h2>
 
-            <div class="about-grid">
+                <p>
+                    I am passionate about technology, design and building
+                    useful digital products.
+                </p>
+            </div>
 
-                <div class="about-card">
-                    <div class="about-icon">💻</div>
-                    <h3>Web Development</h3>
+
+            <div class="about-layout">
+
+                <div class="about-intro-card">
+
+                    <div class="about-icon">
+                        💻
+                    </div>
+
+                    <h3>
+                        Who I Am
+                    </h3>
+
                     <p>
-                        I build responsive and modern websites using
-                        HTML, CSS and JavaScript.
+                        PAYHINT is a growing digital brand focused on
+                        web development, creative design and technology.
+                        I enjoy learning new technologies and using them
+                        to solve real-world problems.
                     </p>
+
+                    <p>
+                        My goal is to create digital experiences that are
+                        simple, attractive, responsive and easy to use.
+                    </p>
+
                 </div>
 
-                <div class="about-card">
-                    <div class="about-icon">🎨</div>
-                    <h3>Creative Design</h3>
-                    <p>
-                        I create clean interfaces that are simple,
-                        attractive and easy to use.
-                    </p>
-                </div>
 
-                <div class="about-card">
-                    <div class="about-icon">🚀</div>
-                    <h3>Problem Solving</h3>
-                    <p>
-                        I use technology and creativity to solve problems
-                        and create useful digital experiences.
-                    </p>
+                <div class="about-features">
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+
+                        <div>
+                            <h3>Web Development</h3>
+                            <p>
+                                Responsive and modern websites.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+
+                        <div>
+                            <h3>Creative Design</h3>
+                            <p>
+                                Clean and attractive interfaces.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+
+                        <div>
+                            <h3>Problem Solving</h3>
+                            <p>
+                                Turning ideas into useful solutions.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -126,87 +188,199 @@
 
 
     <!-- ================= SKILLS ================= -->
+
     <section id="skills" class="section light-section">
 
         <div class="container">
 
-            <h2 class="section-title">My Skills</h2>
+            <div class="section-heading">
+                <span class="section-label">MY SKILLS</span>
 
-            <p class="section-intro">
-                Here are some of the technologies and creative skills
-                used by PAYHINT to build modern digital experiences.
-            </p>
+                <h2>
+                    Skills & <span>Expertise</span>
+                </h2>
+
+                <p>
+                    Technologies and creative skills I use to build
+                    digital experiences.
+                </p>
+            </div>
+
 
             <div class="skills-grid">
 
-                <div class="skill-card">
-                    <div class="skill-heading">
-                        <h3>🌐 HTML</h3>
-                        <span>90%</span>
-                    </div>
-                    <p>Creating clean and well-structured websites.</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 90%;"></div>
-                    </div>
-                </div>
+
+                <!-- HTML -->
 
                 <div class="skill-card">
-                    <div class="skill-heading">
-                        <h3>🎨 CSS</h3>
-                        <span>85%</span>
-                    </div>
-                    <p>Designing responsive and attractive websites.</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 85%;"></div>
-                    </div>
-                </div>
 
-                <div class="skill-card">
-                    <div class="skill-heading">
-                        <h3>⚡ JavaScript</h3>
-                        <span>75%</span>
-                    </div>
-                    <p>Adding interactive features and functionality.</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 75%;"></div>
-                    </div>
-                </div>
+                    <div class="skill-top">
 
-                <div class="skill-card">
-                    <div class="skill-heading">
-                        <h3>🖌️ UI/UX Design</h3>
-                        <span>80%</span>
-                    </div>
-                    <p>Creating simple and user-friendly interfaces.</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 80%;"></div>
-                    </div>
-                </div>
+                        <div class="skill-name">
+                            <span class="skill-icon">🌐</span>
+                            <h3>HTML</h3>
+                        </div>
 
-                <div class="skill-card">
-                    <div class="skill-heading">
-                        <h3>🎮 Roblox Development</h3>
-                        <span>70%</span>
+                        <strong>90%</strong>
+
                     </div>
+
                     <p>
-                        Creating interactive Roblox experiences and interfaces.
+                        Building clean and structured web pages.
                     </p>
+
                     <div class="skill-progress">
-                        <div class="progress-bar" style="width: 70%;"></div>
+                        <div
+                            class="progress-bar"
+                            style="width: 90%;"
+                        ></div>
                     </div>
+
                 </div>
 
+
+                <!-- CSS -->
+
                 <div class="skill-card">
-                    <div class="skill-heading">
-                        <h3>📱 App Development</h3>
-                        <span>65%</span>
+
+                    <div class="skill-top">
+
+                        <div class="skill-name">
+                            <span class="skill-icon">🎨</span>
+                            <h3>CSS</h3>
+                        </div>
+
+                        <strong>85%</strong>
+
                     </div>
+
                     <p>
-                        Building useful and user-friendly applications.
+                        Creating attractive and responsive designs.
                     </p>
+
                     <div class="skill-progress">
-                        <div class="progress-bar" style="width: 65%;"></div>
+                        <div
+                            class="progress-bar"
+                            style="width: 85%;"
+                        ></div>
                     </div>
+
+                </div>
+
+
+                <!-- JavaScript -->
+
+                <div class="skill-card">
+
+                    <div class="skill-top">
+
+                        <div class="skill-name">
+                            <span class="skill-icon">⚡</span>
+                            <h3>JavaScript</h3>
+                        </div>
+
+                        <strong>75%</strong>
+
+                    </div>
+
+                    <p>
+                        Creating interactive website functionality.
+                    </p>
+
+                    <div class="skill-progress">
+                        <div
+                            class="progress-bar"
+                            style="width: 75%;"
+                        ></div>
+                    </div>
+
+                </div>
+
+
+                <!-- UI UX -->
+
+                <div class="skill-card">
+
+                    <div class="skill-top">
+
+                        <div class="skill-name">
+                            <span class="skill-icon">🖌️</span>
+                            <h3>UI/UX Design</h3>
+                        </div>
+
+                        <strong>80%</strong>
+
+                    </div>
+
+                    <p>
+                        Designing simple and user-friendly interfaces.
+                    </p>
+
+                    <div class="skill-progress">
+                        <div
+                            class="progress-bar"
+                            style="width: 80%;"
+                        ></div>
+                    </div>
+
+                </div>
+
+
+                <!-- Roblox -->
+
+                <div class="skill-card">
+
+                    <div class="skill-top">
+
+                        <div class="skill-name">
+                            <span class="skill-icon">🎮</span>
+                            <h3>Roblox Development</h3>
+                        </div>
+
+                        <strong>70%</strong>
+
+                    </div>
+
+                    <p>
+                        Creating interactive Roblox experiences.
+                    </p>
+
+                    <div class="skill-progress">
+                        <div
+                            class="progress-bar"
+                            style="width: 70%;"
+                        ></div>
+                    </div>
+
+                </div>
+
+
+                <!-- App Development -->
+
+                <div class="skill-card">
+
+                    <div class="skill-top">
+
+                        <div class="skill-name">
+                            <span class="skill-icon">📱</span>
+                            <h3>App Development</h3>
+                        </div>
+
+                        <strong>65%</strong>
+
+                    </div>
+
+                    <p>
+                        Building useful and simple application concepts.
+                    </p>
+
+                    <div class="skill-progress">
+                        <div
+                            class="progress-bar"
+                            style="width: 65%;"
+                        ></div>
+                    </div>
+
                 </div>
 
             </div>
@@ -217,61 +391,127 @@
 
 
     <!-- ================= PROJECTS ================= -->
+
     <section id="projects" class="section">
 
         <div class="container">
 
-            <h2 class="section-title">PAYHINT Projects</h2>
+            <div class="section-heading">
+                <span class="section-label">MY WORK</span>
 
-            <p class="section-intro">
-                Some of the projects and digital experiences created by PAYHINT.
-            </p>
+                <h2>
+                    Featured <span>Projects</span>
+                </h2>
+
+                <p>
+                    A selection of projects and digital experiences.
+                </p>
+            </div>
+
 
             <div class="projects-grid">
 
-                <div class="project-card">
-                    <div class="project-icon">🌐</div>
-                    <h3>Portfolio Website</h3>
-                    <p>
-                        A modern responsive portfolio website designed
-                        to showcase skills, services and projects.
-                    </p>
 
-                    <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                <!-- PROJECT 1 -->
+
+                <div class="project-card">
+
+                    <div class="project-image project-blue">
+                        <span>🌐</span>
                     </div>
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 01
+                        </span>
+
+                        <h3>
+                            Portfolio Website
+                        </h3>
+
+                        <p>
+                            A professional responsive portfolio website
+                            designed to showcase skills, services and
+                            projects.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">🎮</div>
-                    <h3>Roblox Project</h3>
-                    <p>
-                        An interactive Roblox project focused on gameplay,
-                        creativity and user experience.
-                    </p>
 
-                    <div class="project-tags">
-                        <span>Roblox</span>
-                        <span>UI</span>
-                        <span>Game</span>
+                <!-- PROJECT 2 -->
+
+                <div class="project-card">
+
+                    <div class="project-image project-purple">
+                        <span>🎮</span>
                     </div>
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 02
+                        </span>
+
+                        <h3>
+                            Roblox Experience
+                        </h3>
+
+                        <p>
+                            An interactive Roblox concept focused on
+                            creativity, gameplay and user experience.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Roblox</span>
+                            <span>UI</span>
+                            <span>Game</span>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">📱</div>
-                    <h3>Mobile App Concept</h3>
-                    <p>
-                        A clean application concept designed around
-                        simplicity, usability and modern interfaces.
-                    </p>
 
-                    <div class="project-tags">
-                        <span>App</span>
-                        <span>UI/UX</span>
-                        <span>Design</span>
+                <!-- PROJECT 3 -->
+
+                <div class="project-card">
+
+                    <div class="project-image project-green">
+                        <span>📱</span>
                     </div>
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 03
+                        </span>
+
+                        <h3>
+                            Mobile App Concept
+                        </h3>
+
+                        <p>
+                            A modern application concept focused on
+                            simplicity, usability and clean design.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>App</span>
+                            <span>UI/UX</span>
+                            <span>Design</span>
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -282,72 +522,133 @@
 
 
     <!-- ================= SERVICES ================= -->
+
     <section id="services" class="section light-section">
 
         <div class="container">
 
-            <h2 class="section-title">PAYHINT Services</h2>
+            <div class="section-heading">
+                <span class="section-label">WHAT I DO</span>
 
-            <p class="section-intro">
-                Creative and digital development services designed
-                to help individuals and businesses build a strong
-                online presence.
-            </p>
+                <h2>
+                    My <span>Services</span>
+                </h2>
+
+                <p>
+                    Digital services designed to help bring your ideas
+                    to life.
+                </p>
+            </div>
+
 
             <div class="services-grid">
 
+
                 <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3>Web Development</h3>
+
+                    <div class="service-icon">
+                        🌐
+                    </div>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
                     <p>
                         Modern, responsive and user-friendly websites
-                        using HTML, CSS and JavaScript.
+                        built with clean code.
                     </p>
+
                 </div>
 
+
                 <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>UI/UX Design</h3>
+
+                    <div class="service-icon">
+                        🎨
+                    </div>
+
+                    <h3>
+                        UI/UX Design
+                    </h3>
+
                     <p>
-                        Clean and intuitive interfaces that make
-                        digital products simple and enjoyable to use.
+                        Clean and intuitive interfaces designed around
+                        the user experience.
                     </p>
+
                 </div>
 
+
                 <div class="service-card">
-                    <div class="service-icon">🎮</div>
-                    <h3>Roblox Development</h3>
+
+                    <div class="service-icon">
+                        🎮
+                    </div>
+
+                    <h3>
+                        Roblox Development
+                    </h3>
+
                     <p>
-                        Interactive Roblox experiences, game concepts
-                        and user interfaces.
+                        Interactive Roblox experiences and creative
+                        game interfaces.
                     </p>
+
                 </div>
 
+
                 <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>App Development</h3>
+
+                    <div class="service-icon">
+                        📱
+                    </div>
+
+                    <h3>
+                        App Development
+                    </h3>
+
                     <p>
                         Useful application concepts with simple and
                         user-friendly interfaces.
                     </p>
+
                 </div>
 
+
                 <div class="service-card">
-                    <div class="service-icon">🖼️</div>
-                    <h3>Graphic Design</h3>
+
+                    <div class="service-icon">
+                        🖼️
+                    </div>
+
+                    <h3>
+                        Graphic Design
+                    </h3>
+
                     <p>
-                        Clean and creative visual designs for digital
-                        projects and brands.
+                        Creative visual designs for digital projects,
+                        content and brands.
                     </p>
+
                 </div>
 
+
                 <div class="service-card">
-                    <div class="service-icon">💡</div>
-                    <h3>Digital Solutions</h3>
+
+                    <div class="service-icon">
+                        💡
+                    </div>
+
+                    <h3>
+                        Digital Solutions
+                    </h3>
+
                     <p>
-                        Technology and creative solutions for different
+                        Technology-based solutions for different
                         digital needs.
                     </p>
+
                 </div>
 
             </div>
@@ -358,78 +659,113 @@
 
 
     <!-- ================= CONTACT ================= -->
+
     <section id="contact" class="section">
 
         <div class="container">
 
-            <h2 class="section-title">Contact PAYHINT</h2>
+            <div class="section-heading">
+                <span class="section-label">GET IN TOUCH</span>
 
-            <p class="section-intro">
-                Have a project in mind? Let's work together.
-            </p>
+                <h2>
+                    Let's Work <span>Together</span>
+                </h2>
+
+                <p>
+                    Have an idea or project? Let's talk about it.
+                </p>
+            </div>
+
 
             <div class="contact-grid">
 
-                <div class="contact-info">
 
-                    <h3>Let's Talk</h3>
+                <!-- CONTACT INFORMATION -->
 
-                    <p>
-                        Feel free to contact PAYHINT about websites,
-                        design, development or other digital projects.
+                <div class="contact-card">
+
+                    <h3>
+                        Let's Talk
+                    </h3>
+
+                    <p class="contact-description">
+                        I'm open to discussing websites, design,
+                        development and other digital projects.
                     </p>
 
-                    <div class="contact-item">
-                        <span>📧</span>
+
+                    <div class="contact-detail">
+
+                        <div class="contact-detail-icon">
+                            📧
+                        </div>
 
                         <div>
-                            <strong>Email</strong>
-                            <p>
-                                <a href="mailto:busariquyumolamilekan@gmail.com">
-                                    busariquyumolamilekan@gmail.com
-                                </a>
-                            </p>
+                            <small>Email</small>
+
+                            <a href="mailto:busariquyumolamilekan@gmail.com">
+                                busariquyumolamilekan@gmail.com
+                            </a>
                         </div>
+
                     </div>
 
-                    <div class="contact-item">
-                        <span>💬</span>
+
+                    <div class="contact-detail">
+
+                        <div class="contact-detail-icon">
+                            💬
+                        </div>
 
                         <div>
-                            <strong>WhatsApp</strong>
+                            <small>WhatsApp</small>
+
                             <p>
-                                Chat with PAYHINT directly on WhatsApp.
+                                Available for project discussions.
                             </p>
                         </div>
+
                     </div>
 
-                    <!-- REPLACE THE NUMBER -->
+
+                    <!-- CHANGE YOUR NUMBER HERE -->
+
                     <a
                         href="https://wa.me/234XXXXXXXXXX"
                         target="_blank"
                         class="whatsapp-btn"
                     >
-                        💬 Chat with PAYHINT on WhatsApp
+                        💬 Chat on WhatsApp
                     </a>
 
                 </div>
 
 
-                <form id="contactForm">
+                <!-- CONTACT FORM -->
 
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        required
-                    >
+                <form
+                    id="contactForm"
+                    class="contact-form"
+                >
 
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Your Email"
-                        required
-                    >
+                    <div class="form-row">
+
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            required
+                        >
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            required
+                        >
+
+                    </div>
+
 
                     <input
                         type="text"
@@ -438,18 +774,20 @@
                         required
                     >
 
+
                     <textarea
                         name="message"
-                        rows="6"
-                        placeholder="Your Message"
+                        rows="7"
+                        placeholder="Tell me about your project..."
                         required
                     ></textarea>
 
+
                     <button
                         type="submit"
-                        class="btn primary-btn"
+                        class="btn primary-btn send-button"
                     >
-                        Send Message
+                        Send Message →
                     </button>
 
                 </form>
@@ -462,15 +800,28 @@
 
 
     <!-- ================= FOOTER ================= -->
+
     <footer>
 
-        <p>
-            © 2026 PAYHINT. All Rights Reserved.
-        </p>
+        <div class="footer-content">
 
-        <a href="#home">
-            ↑ Back to Top
-        </a>
+            <div class="footer-logo">
+                PAY<span>HINT</span>
+            </div>
+
+            <p>
+                Building digital experiences with creativity and technology.
+            </p>
+
+            <p class="copyright">
+                © 2026 PAYHINT. All Rights Reserved.
+            </p>
+
+            <a href="#home" class="back-top">
+                ↑ Back to Top
+            </a>
+
+        </div>
 
     </footer>
 
