@@ -1,7 +1,3 @@
-/* ================================
-   GENERAL
-================================ */
-
 * {
     box-sizing: border-box;
 }
@@ -36,9 +32,7 @@ h2 {
 }
 
 
-/* ================================
-   NAVIGATION
-================================ */
+/* NAVIGATION */
 
 nav {
     background-color: darkblue;
@@ -78,15 +72,8 @@ nav a:hover {
     font-weight: bold;
 }
 
-#themeButton:hover {
-    background-color: white;
-    color: darkblue;
-}
 
-
-/* ================================
-   HOME
-================================ */
+/* HOME */
 
 .home-section {
     min-height: 90vh;
@@ -112,9 +99,7 @@ nav a:hover {
 }
 
 
-/* ================================
-   BUTTONS
-================================ */
+/* BUTTONS */
 
 .home-buttons {
     display: flex;
@@ -155,13 +140,10 @@ nav a:hover {
 .work-button:hover,
 .hire-button:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 
-/* ================================
-   PROFILE IMAGE
-================================ */
+/* PROFILE PHOTO */
 
 .profile {
     display: block;
@@ -175,9 +157,7 @@ nav a:hover {
 }
 
 
-/* ================================
-   INTRO
-================================ */
+/* INTRO */
 
 .intro {
     background-color: white;
@@ -193,9 +173,7 @@ nav a:hover {
 }
 
 
-/* ================================
-   ABOUT
-================================ */
+/* ABOUT */
 
 .about-card {
     max-width: 850px;
@@ -207,9 +185,7 @@ nav a:hover {
 }
 
 
-/* ================================
-   SKILLS
-================================ */
+/* SKILLS */
 
 .skills {
     max-width: 800px;
@@ -225,20 +201,32 @@ nav a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
+/* THIS FIXES HTML85% */
+
 .skill h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px;
+    width: 100%;
+    margin: 0 0 8px 0;
     color: darkblue;
+    gap: 20px;
 }
 
 .skill h3 span {
-    margin-left: 20px;
+    display: inline-block;
+    margin-left: auto;
+    padding-left: 20px;
     white-space: nowrap;
+    font-weight: bold;
+}
+
+.skill p {
+    margin-top: 5px;
 }
 
 .skill-bar {
+    width: 100%;
     height: 12px;
     background-color: #ddd;
     border-radius: 20px;
@@ -264,14 +252,11 @@ nav a:hover {
 }
 
 
-/* ================================
-   PROJECTS
-================================ */
+/* PROJECTS */
 
 .projects-intro {
     max-width: 650px;
     margin: 10px auto 30px;
-    font-size: 17px;
 }
 
 .projects {
@@ -292,7 +277,6 @@ nav a:hover {
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h3 {
@@ -309,14 +293,8 @@ nav a:hover {
     border-radius: 8px;
 }
 
-.project-card a:hover {
-    background-color: #000080;
-}
 
-
-/* ================================
-   SERVICES
-================================ */
+/* SERVICES */
 
 .services {
     display: grid;
@@ -331,11 +309,6 @@ nav a:hover {
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
 }
 
 .service-card h3 {
@@ -343,9 +316,7 @@ nav a:hover {
 }
 
 
-/* ================================
-   WHY HIRE ME
-================================ */
+/* WHY HIRE ME */
 
 .why-hire {
     max-width: 1000px;
@@ -365,11 +336,6 @@ nav a:hover {
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: 0.3s ease;
-}
-
-.why-card:hover {
-    transform: translateY(-8px);
 }
 
 .why-card h3 {
@@ -377,9 +343,7 @@ nav a:hover {
 }
 
 
-/* ================================
-   CONTACT
-================================ */
+/* CONTACT */
 
 .contact-intro {
     max-width: 650px;
@@ -387,7 +351,6 @@ nav a:hover {
 }
 
 .contact-email {
-    text-align: center;
     margin: 20px auto;
 }
 
@@ -408,14 +371,8 @@ nav a:hover {
     font-weight: bold;
 }
 
-.whatsapp-button:hover {
-    transform: translateY(-4px);
-}
 
-
-/* ================================
-   CONTACT FORM
-================================ */
+/* CONTACT FORM */
 
 #contactForm {
     max-width: 650px;
@@ -437,12 +394,6 @@ nav a:hover {
     font-family: Arial, sans-serif;
 }
 
-#contactForm input:focus,
-#contactForm textarea:focus {
-    outline: none;
-    border-color: darkblue;
-}
-
 #contactForm button {
     width: 100%;
     padding: 14px;
@@ -455,28 +406,14 @@ nav a:hover {
     cursor: pointer;
 }
 
-#contactForm button:hover {
-    background-color: #000080;
-}
 
-#formMessage {
-    font-weight: bold;
-}
-
-
-/* ================================
-   FOOTER
-================================ */
+/* FOOTER */
 
 footer {
     margin-top: 60px;
     padding: 40px 20px;
     background-color: #111;
     color: white;
-}
-
-footer h3 {
-    font-size: 24px;
 }
 
 .social-links {
@@ -493,29 +430,10 @@ footer h3 {
     padding: 10px 18px;
     border: 1px solid white;
     border-radius: 8px;
-    font-weight: bold;
-}
-
-.social-links a:hover {
-    background-color: white;
-    color: #111;
-}
-
-#topButton {
-    margin-top: 15px;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 20px;
-    background-color: white;
-    color: #111;
-    cursor: pointer;
-    font-weight: bold;
 }
 
 
-/* ================================
-   DARK MODE
-================================ */
+/* DARK MODE */
 
 body.dark-mode {
     background-color: #121212;
@@ -549,24 +467,10 @@ body.dark-mode .why-card h3 {
     color: #66ccff;
 }
 
-body.dark-mode .contact-email a {
-    color: #66ccff;
-}
 
-body.dark-mode .skill-bar {
-    background-color: #555;
-}
-
-
-/* ================================
-   MOBILE
-================================ */
+/* MOBILE */
 
 @media (max-width: 600px) {
-
-    nav {
-        padding: 15px 8px;
-    }
 
     nav a,
     #themeButton {
@@ -584,20 +488,6 @@ body.dark-mode .skill-bar {
 
     .welcome-text {
         font-size: 17px;
-    }
-
-    .home-description {
-        font-size: 16px;
-    }
-
-    .home-buttons {
-        flex-direction: column;
-    }
-
-    .cv-button,
-    .work-button,
-    .hire-button {
-        width: fit-content;
     }
 
     .profile {
@@ -620,13 +510,7 @@ body.dark-mode .skill-bar {
         width: 90%;
     }
 
-    .social-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .skill h3 {
         font-size: 18px;
     }
-
 }
