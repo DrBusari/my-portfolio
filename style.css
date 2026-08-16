@@ -513,3 +513,71 @@ body.dark-mode .skill-progress {
         margin: auto;
     }
 }
+/* BUTTONS */
+
+button,
+.whatsapp-btn,
+.hire-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    background: darkblue;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.whatsapp-btn:hover,
+.hire-btn:hover {
+    transform: scale(1.05);
+    background: #001f5c;
+}
+
+/* DARK MODE */
+
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode h1,
+.dark-mode h2 {
+    color: #66b3ff;
+}
+
+.dark-mode nav {
+    background: #050505;
+}
+
+.dark-mode .whatsapp-btn,
+.dark-mode .hire-btn {
+    background: #087f23;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    section {
+        padding: 45px 15px;
+    }
+}
