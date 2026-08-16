@@ -226,12 +226,16 @@ nav a:hover {
 }
 
 .skill h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 5px;
     color: darkblue;
 }
 
 .skill h3 span {
-    float: right;
+    margin-left: 20px;
+    white-space: nowrap;
 }
 
 .skill-bar {
@@ -619,6 +623,10 @@ body.dark-mode .skill-bar {
     .social-links {
         flex-direction: column;
         align-items: center;
+    }
+
+    .skill h3 {
+        font-size: 18px;
     }
 
 }
