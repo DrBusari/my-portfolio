@@ -4,37 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAYHINT - Web Developer</title>
+
+    <title>PAYHINT | Web Developer & Digital Creator</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <a href="https://drbusari.github.io/my-portfolio/" target="_blank">View Project</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <!-- ================================
+         NAVIGATION
+    ================================ -->
 
-        <button id="themeButton" onclick="toggleTheme()">
-            🌙 Dark Mode
-        </button>
+    <nav>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+            <button id="themeButton" onclick="toggleTheme()">
+                🌙 Dark Mode
+            </button>
+
+        </div>
+
     </nav>
 
-    <main>
 
-        <h1 id="home">
-            <span id="typingText"></span>
+    <!-- ================================
+         HOME
+    ================================ -->
+
+    <section id="home" class="home-section">
+
+        <h1>
+            Hello, I'm PAYHINT 👋
         </h1>
 
         <p class="welcome-text">
-            Web Developer • Designer • Computer Science Student
+            Web Developer • UI/UX Designer • Roblox Developer •
+            App Developer • Graphics Designer • Computer Science Student
         </p>
 
         <p class="home-description">
-            I build simple, modern and responsive websites using HTML, CSS and JavaScript.
+            I create modern, responsive and user-friendly digital
+            experiences. I turn ideas into functional websites,
+            engaging interfaces, interactive Roblox experiences,
+            app concepts and creative digital solutions.
         </p>
+
 
         <div class="home-buttons">
 
@@ -52,342 +75,608 @@
 
         </div>
 
+
         <!-- PROFILE PHOTO -->
-        <img class="profile" src="profile.jpg" alt="PAYHINT - Web Developer">
+
+        <img
+            class="profile"
+            src="profile.jpg"
+            alt="PAYHINT - Web Developer"
+        >
+
 
         <p class="availability">
             🟢 Available for Work
         </p>
 
+
+        <!-- INTRO CARD -->
+
         <div class="intro">
-            <h2>Hello! I'm PAYHINT 👋</h2>
+
+            <h2>
+                Hello! I'm PAYHINT 👋
+            </h2>
 
             <p>
-                I am a computer science student passionate about web development.
-                I enjoy creating websites and learning new technologies.
+                I am a passionate Computer Science student and aspiring
+                technology professional with a strong interest in Web
+                Development, UI/UX Design, Roblox Development, App
+                Development and Graphic Design.
             </p>
+
+            <p>
+                I enjoy turning ideas into modern, responsive and
+                user-friendly digital experiences.
+            </p>
+
         </div>
 
-        <!-- ABOUT -->
-        <section>
+    </section>
 
-            <h2 id="about">About Me</h2>
 
-            <div class="about-card">
+    <!-- ================================
+         ABOUT
+    ================================ -->
 
-                <p>
-                    I am a computer science student passionate about technology
-                    and web development. I enjoy creating websites, learning
-                    new programming skills, and building useful digital projects.
-                </p>
+    <section>
 
-                <p>
-                    My goal is to continue improving my skills and become a
-                    professional web developer.
-                </p>
+        <h2 id="about">
+            About Me
+        </h2>
 
-            </div>
+        <div class="about-card">
 
-        </section>
-
-        <!-- SKILLS -->
-        <section>
-
-            <h2 id="skills">My Skills</h2>
-
-            <div class="skills">
-
-                <div class="skill">
-
-                    <h3>
-                        HTML
-                        <span>85%</span>
-                    </h3>
-
-                    <p>
-                        Building the structure of websites.
-                    </p>
-
-                    <div class="skill-bar">
-                        <div class="skill-progress html-progress"></div>
-                    </div>
-
-                </div>
-
-                <div class="skill">
-
-                    <h3>
-                        CSS
-                        <span>75%</span>
-                    </h3>
-
-                    <p>
-                        Designing and styling websites.
-                    </p>
-
-                    <div class="skill-bar">
-                        <div class="skill-progress css-progress"></div>
-                    </div>
-
-                </div>
-
-                <div class="skill">
-
-                    <h3>
-                        JavaScript
-                        <span>60%</span>
-                    </h3>
-
-                    <p>
-                        Adding interaction and functionality.
-                    </p>
-
-                    <div class="skill-bar">
-                        <div class="skill-progress js-progress"></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- PROJECTS -->
-        <section>
-
-            <h2 id="projects">My Projects</h2>
-
-            <p class="projects-intro">
-                Here are some of the projects I have worked on and continue to improve.
+            <p>
+                I am a passionate Computer Science student and aspiring
+                technology professional with a strong interest in Web
+                Development, UI/UX Design, Roblox Development, App
+                Development and Graphic Design.
             </p>
 
-            <div class="projects">
-
-                <div class="project-card">
-
-                    <h3>🌐 Personal Portfolio Website</h3>
-
-                    <p>
-                        A responsive personal portfolio website built with HTML,
-                        CSS and JavaScript to showcase my skills and services.
-                    </p>
-
-                    <a href="#home">
-                        View Project
-                    </a>
-
-                </div>
-
-                <div class="project-card">
-
-                    <h3>📄 CV Download System</h3>
-
-                    <p>
-                        A simple CV download feature that allows visitors to
-                        view and download my professional CV.
-                    </p>
-
-                    <a href="cv.pdf" target="_blank">
-                        View CV
-                    </a>
-
-                </div>
-
-                <div class="project-card">
-
-                    <h3>💬 Contact System</h3>
-
-                    <p>
-                        A contact system that allows visitors to send messages
-                        through my portfolio website.
-                    </p>
-
-                    <a href="#contact">
-                        Contact Me
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- SERVICES -->
-        <section>
-
-            <h2 id="services">My Services</h2>
-
-            <div class="services">
-
-                <div class="service-card">
-
-                    <h3>🎨 Web Design</h3>
-
-                    <p>
-                        I can create clean and attractive websites using HTML and CSS.
-                    </p>
-
-                </div>
-
-                <div class="service-card">
-
-                    <h3>⚡ JavaScript</h3>
-
-                    <p>
-                        I can add interactive features to websites using JavaScript.
-                    </p>
-
-                </div>
-
-                <div class="service-card">
-
-                    <h3>💻 Website Development</h3>
-
-                    <p>
-                        I can build simple websites that work on computers and phones.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- WHY HIRE ME -->
-        <section class="why-hire">
-
-            <h2>Why Hire Me?</h2>
-
-            <div class="why-hire-cards">
-
-                <div class="why-card">
-
-                    <h3>💡 Creative</h3>
-
-                    <p>
-                        I create clean and modern website designs.
-                    </p>
-
-                </div>
-
-                <div class="why-card">
-
-                    <h3>📱 Responsive</h3>
-
-                    <p>
-                        I build websites that work well on phones and computers.
-                    </p>
-
-                </div>
-
-                <div class="why-card">
-
-                    <h3>⚡ Reliable</h3>
-
-                    <p>
-                        I am committed to learning, improving and delivering quality work.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- CONTACT -->
-        <section>
-
-            <h2 id="contact">Contact Me</h2>
-
-            <p class="contact-intro">
-                Have a question or want to work with me?
-                Send me a message and I'll get back to you.
+            <p>
+                I enjoy transforming ideas into modern, responsive and
+                user-friendly digital experiences. I use HTML, CSS and
+                JavaScript to create functional and visually appealing
+                websites.
             </p>
 
-            <p class="contact-email">
+            <p>
+                I am also interested in creating interactive Roblox
+                experiences, developing innovative app concepts and
+                producing creative digital designs.
+            </p>
 
-                📧 Email:
+            <p>
+                My goal is to continuously improve my technical and
+                creative skills while building digital solutions that
+                provide real value to users and businesses.
+            </p>
 
-                <a href="mailto:busariquyumolamilekan@gmail.com">
-                    busariquyumolamilekan@gmail.com
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         SKILLS
+    ================================ -->
+
+    <section>
+
+        <h2 id="skills">
+            My Skills
+        </h2>
+
+        <div class="skills">
+
+
+            <div class="skill">
+
+                <h3>
+                    HTML
+                    <span>85%</span>
+                </h3>
+
+                <p>
+                    Building structured, semantic and responsive websites.
+                </p>
+
+                <div class="skill-bar">
+                    <div class="skill-progress html-progress"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    CSS
+                    <span>80%</span>
+                </h3>
+
+                <p>
+                    Creating modern, responsive and attractive website designs.
+                </p>
+
+                <div class="skill-bar">
+                    <div class="skill-progress css-progress"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    JavaScript
+                    <span>70%</span>
+                </h3>
+
+                <p>
+                    Adding interaction, functionality and dynamic features.
+                </p>
+
+                <div class="skill-bar">
+                    <div class="skill-progress js-progress"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    UI/UX Design
+                    <span>70%</span>
+                </h3>
+
+                <p>
+                    Designing simple, intuitive and user-friendly interfaces.
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    Roblox Development
+                    <span>65%</span>
+                </h3>
+
+                <p>
+                    Creating interactive Roblox experiences and game concepts.
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    Graphic Design
+                    <span>65%</span>
+                </h3>
+
+                <p>
+                    Creating creative visual designs for digital projects.
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    App Development
+                    <span>60%</span>
+                </h3>
+
+                <p>
+                    Exploring app concepts and building useful digital solutions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         PROJECTS
+    ================================ -->
+
+    <section>
+
+        <h2 id="projects">
+            My Projects
+        </h2>
+
+        <p class="projects-intro">
+            Here are some of the projects I have worked on and
+            continue to improve.
+        </p>
+
+
+        <div class="projects">
+
+
+            <div class="project-card">
+
+                <h3>
+                    🌐 Personal Portfolio Website
+                </h3>
+
+                <p>
+                    A responsive personal portfolio website built with
+                    HTML, CSS and JavaScript to showcase my skills,
+                    projects and services.
+                </p>
+
+                <a href="#home">
+                    View Project
                 </a>
 
-            </p>
+            </div>
 
-            <a
-                href="https://wa.me/2348104997370?text=Hello%20PAYHINT%2C%20I%20found%20your%20website%20and%20I'd%20like%20to%20know%20more%20about%20your%20services."
-                class="whatsapp-button"
-                target="_blank">
 
-                💬 Contact Me on WhatsApp
+            <div class="project-card">
 
+                <h3>
+                    📄 CV Download System
+                </h3>
+
+                <p>
+                    A professional CV download feature that allows
+                    visitors to view my professional information.
+                </p>
+
+                <a href="cv.pdf" target="_blank">
+                    View CV
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>
+                    💬 Contact System
+                </h3>
+
+                <p>
+                    A contact system that allows visitors to send
+                    messages through my portfolio website.
+                </p>
+
+                <a href="#contact">
+                    Contact Me
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>
+                    🎮 Roblox Projects
+                </h3>
+
+                <p>
+                    Interactive Roblox project concepts focused on
+                    creativity, gameplay and digital experiences.
+                </p>
+
+                <a href="#contact">
+                    Discuss Project
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         SERVICES
+    ================================ -->
+
+    <section>
+
+        <h2 id="services">
+            My Services
+        </h2>
+
+
+        <div class="services">
+
+
+            <div class="service-card">
+
+                <h3>
+                    🎨 Web Design
+                </h3>
+
+                <p>
+                    Creating clean, modern and attractive website
+                    designs using HTML and CSS.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>
+                    💻 Website Development
+                </h3>
+
+                <p>
+                    Building responsive websites that work well on
+                    computers, tablets and mobile devices.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>
+                    ⚡ JavaScript Development
+                </h3>
+
+                <p>
+                    Adding interactive features and useful
+                    functionality to websites.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>
+                    🎮 Roblox Development
+                </h3>
+
+                <p>
+                    Creating Roblox experiences and developing
+                    creative game concepts.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>
+                    🖥️ UI/UX Design
+                </h3>
+
+                <p>
+                    Designing simple, intuitive and user-friendly
+                    digital interfaces.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>
+                    🎨 Graphic Design
+                </h3>
+
+                <p>
+                    Creating creative graphics and visual content
+                    for digital projects.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         WHY HIRE ME
+    ================================ -->
+
+    <section class="why-hire">
+
+        <h2>
+            Why Hire Me?
+        </h2>
+
+
+        <div class="why-hire-cards">
+
+
+            <div class="why-card">
+
+                <h3>
+                    💡 Creative
+                </h3>
+
+                <p>
+                    I bring creativity and fresh ideas to digital
+                    projects.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>
+                    📱 Responsive
+                </h3>
+
+                <p>
+                    I focus on creating experiences that work well
+                    across different devices.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>
+                    ⚡ Dedicated
+                </h3>
+
+                <p>
+                    I am committed to continuous learning,
+                    improvement and quality work.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>
+                    🚀 Growth Mindset
+                </h3>
+
+                <p>
+                    I continuously develop my technical and creative
+                    skills.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         CONTACT
+    ================================ -->
+
+    <section>
+
+        <h2 id="contact">
+            Contact Me
+        </h2>
+
+        <p class="contact-intro">
+            Have a project, question or opportunity?
+            Send me a message and I'll get back to you.
+        </p>
+
+
+        <p class="contact-email">
+
+            📧 Email:
+
+            <a href="mailto:busariquyumolamilekan@gmail.com">
+                busariquyumolamilekan@gmail.com
             </a>
 
-            <form
-                id="contactForm"
-                action="https://formspree.io/f/xoealazl"
-                method="POST">
+        </p>
 
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    required>
 
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    required>
+        <a
+            href="https://wa.me/2348104997370?text=Hello%20PAYHINT%2C%20I%20found%20your%20website%20and%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+            class="whatsapp-button"
+            target="_blank"
+        >
+            💬 Contact Me on WhatsApp
+        </a>
 
-                <textarea
-                    name="message"
-                    placeholder="Your Message"
-                    rows="5"
-                    required></textarea>
 
-                <button type="submit">
-                    Send Message
-                </button>
+        <form
+            id="contactForm"
+            action="https://formspree.io/f/xoealazl"
+            method="POST"
+        >
 
-            </form>
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+            >
 
-            <p id="formMessage"></p>
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+            >
 
-            <a href="#contact" class="hire-button">
-                Hire Me
-            </a>
+            <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="6"
+                required
+            ></textarea>
 
-            <br>
-
-            <button id="topButton" onclick="goToTop()">
-                ↑ Back to Top
+            <button type="submit">
+                Send Message
             </button>
 
-        </section>
+        </form>
 
-    </main>
 
-    <!-- FOOTER -->
+        <p id="formMessage"></p>
+
+
+        <a href="#contact" class="hire-button">
+            Hire Me
+        </a>
+
+
+        <br>
+
+
+        <button
+            id="topButton"
+            onclick="goToTop()"
+        >
+            ↑ Back to Top
+        </button>
+
+    </section>
+
+
+    <!-- ================================
+         FOOTER
+    ================================ -->
+
     <footer>
 
-        <h3>Connect With Me</h3>
+        <h3>
+            Connect With Me
+        </h3>
+
 
         <div class="social-links">
 
             <a
                 href="https://www.facebook.com/share/195squ4Nqe/?mibextid=wwXIfr"
-                target="_blank">
+                target="_blank"
+            >
                 Facebook
             </a>
 
             <a
                 href="https://github.com/DrBusari"
-                target="_blank">
+                target="_blank"
+            >
                 GitHub
             </a>
 
         </div>
+
 
         <p>
             © 2026 PAYHINT. All Rights Reserved.
@@ -398,6 +687,7 @@
         </p>
 
     </footer>
+
 
     <script src="script.js"></script>
 
