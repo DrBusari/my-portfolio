@@ -48,14 +48,6 @@ nav {
     z-index: 1000;
 }
 
-.nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
 nav a {
     color: white;
     text-decoration: none;
@@ -88,10 +80,6 @@ nav a:hover {
    HOME
 ================================ */
 
-.home-section {
-    min-height: 90vh;
-}
-
 .welcome-text {
     font-size: 21px;
     font-weight: bold;
@@ -102,12 +90,6 @@ nav a:hover {
     max-width: 700px;
     margin: 20px auto;
     font-size: 18px;
-}
-
-.portfolio-tagline {
-    font-size: 18px;
-    font-weight: bold;
-    color: darkblue;
 }
 
 .availability {
@@ -164,10 +146,10 @@ nav a:hover {
 
 
 /* ================================
-   IMAGE
+   PROFILE IMAGE
 ================================ */
 
-img {
+.profile {
     display: block;
     width: 220px;
     height: 220px;
@@ -519,8 +501,7 @@ body.dark-mode {
 }
 
 body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode .portfolio-tagline {
+body.dark-mode h2 {
     color: #66ccff;
 }
 
@@ -565,15 +546,10 @@ body.dark-mode .skill-bar {
         padding: 15px 8px;
     }
 
-    .nav-links {
-        flex-direction: column;
-        gap: 8px;
-    }
-
     nav a,
     #themeButton {
-        width: 90%;
-        text-align: center;
+        display: inline-block;
+        margin: 5px;
     }
 
     h1 {
@@ -602,7 +578,7 @@ body.dark-mode .skill-bar {
         width: fit-content;
     }
 
-    img {
+    .profile {
         width: 180px;
         height: 180px;
     }
@@ -626,4 +602,5 @@ body.dark-mode .skill-bar {
         flex-direction: column;
         align-items: center;
     }
+
 }
