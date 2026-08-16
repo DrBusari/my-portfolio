@@ -20,7 +20,7 @@ body {
 }
 
 section {
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 h1 {
@@ -46,6 +46,14 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav a {
@@ -80,14 +88,20 @@ nav a:hover {
    HOME
 ================================ */
 
+.home-section {
+    min-height: 90vh;
+}
+
 .welcome-text {
+    max-width: 950px;
+    margin: 15px auto;
     font-size: 21px;
     font-weight: bold;
     color: #333;
 }
 
 .home-description {
-    max-width: 700px;
+    max-width: 750px;
     margin: 20px auto;
     font-size: 18px;
 }
@@ -238,11 +252,11 @@ nav a:hover {
 }
 
 .css-progress {
-    width: 75%;
+    width: 80%;
 }
 
 .js-progress {
-    width: 60%;
+    width: 70%;
 }
 
 
@@ -439,6 +453,10 @@ nav a:hover {
 
 #contactForm button:hover {
     background-color: #000080;
+}
+
+#formMessage {
+    font-weight: bold;
 }
 
 
