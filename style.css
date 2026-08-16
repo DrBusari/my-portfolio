@@ -189,6 +189,16 @@ header {
     color: #ffffff;
 }
 
+.cv-button {
+    background: #111827;
+    color: #ffffff;
+}
+
+.cv-button:hover {
+    background: #374151;
+    transform: translateY(-2px);
+}
+
 
 /* SECTIONS */
 
