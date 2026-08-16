@@ -1,5 +1,8 @@
+```css id="s8k2m1"
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -7,36 +10,17 @@ html {
 }
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     background: lightblue;
     color: #222;
     line-height: 1.6;
 }
 
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-h1 {
-    color: darkblue;
-    font-size: 42px;
-    margin-top: 40px;
-}
-
-h2 {
-    color: darkblue;
-    font-size: 32px;
-    margin-bottom: 25px;
-}
-
-
 /* NAVIGATION */
 
 nav {
     background: darkblue;
-    padding: 18px;
+    padding: 18px 10px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -46,8 +30,8 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 12px;
-    font-size: 17px;
+    margin: 0 10px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -66,518 +50,241 @@ nav a:hover {
     margin-left: 10px;
 }
 
+#themeButton:hover {
+    background: white;
+    color: darkblue;
+}
+
+/* SECTIONS */
+
+section {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 55px 25px;
+    text-align: center;
+}
+
+section h2 {
+    color: darkblue;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: darkblue;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+section p {
+    max-width: 800px;
+    margin: 10px auto;
+}
 
 /* HOME */
+
+#home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    color: darkblue;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
 
 .welcome-text {
     font-size: 20px;
     font-weight: bold;
-    color: #333;
-    max-width: 950px;
-    margin: 15px auto;
 }
 
-.home-description {
-    max-width: 750px;
-    margin: 20px auto;
-    font-size: 18px;
-}
+/* BUTTONS */
 
-.home-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin: 25px auto;
-}
-
-.cv-button,
-.work-button,
-.hire-button {
+.hire-btn,
+.whatsapp-btn,
+button {
     display: inline-block;
-    padding: 13px 24px;
+    padding: 12px 24px;
+    margin: 10px 5px;
+    border: none;
     border-radius: 25px;
+    background: darkblue;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.cv-button {
-    background: darkblue;
-    color: white;
+.hire-btn:hover,
+.whatsapp-btn:hover,
+button:hover {
+    transform: translateY(-3px);
+    background: #001f5c;
 }
-
-.work-button {
-    background: #333;
-    color: white;
-}
-
-.hire-button {
-    background: #25D366;
-    color: white;
-}
-
-.cv-button:hover,
-.work-button:hover,
-.hire-button:hover {
-    transform: translateY(-4px);
-}
-
-
-/* PROFILE */
-
-.profile {
-    display: block;
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 25px auto;
-    border: 5px solid darkblue;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.availability {
-    color: #168a3a;
-    font-weight: bold;
-}
-
-
-/* INTRO */
-
-.intro {
-    background: white;
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-
-/* ABOUT */
-
-.about-card {
-    max-width: 850px;
-    margin: auto;
-    padding: 30px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
 
 /* SKILLS */
 
-.skills {
-    max-width: 800px;
-    margin: auto;
+#skills h3 {
+    margin-top: 25px;
 }
 
-.skill {
+#skills p {
+    margin-bottom: 5px;
+}
+
+/* PROJECTS AND SERVICES */
+
+#projects h3,
+#services h3 {
     background: white;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 15px;
-    text-align: left;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    max-width: 850px;
+    margin: 25px auto 0;
+    padding: 20px 20px 5px;
+    border-radius: 15px 15px 0 0;
 }
 
-.skill h3 {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 10px;
-    color: darkblue;
-}
-
-.skill-bar {
-    width: 100%;
-    height: 12px;
-    background: #ddd;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.skill-progress {
-    height: 100%;
-    background: darkblue;
-    border-radius: 20px;
-}
-
-.html-progress {
-    width: 85%;
-}
-
-.css-progress {
-    width: 80%;
-}
-
-.js-progress {
-    width: 70%;
-}
-
-.uiux-progress {
-    width: 70%;
-}
-
-.roblox-progress {
-    width: 65%;
-}
-
-.graphic-progress {
-    width: 65%;
-}
-
-.app-progress {
-    width: 60%;
-}
-
-
-/* PROJECTS */
-
-.projects-intro,
-.services-intro,
-.why-intro,
-.contact-intro {
-    max-width: 700px;
-    margin: 10px auto 30px;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.project-card {
+#projects h3 + p,
+#services h3 + p {
     background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
+    max-width: 850px;
+    padding: 5px 25px 25px;
+    border-radius: 0 0 15px 15px;
 }
 
-.project-card:hover {
-    transform: translateY(-8px);
-}
+/* CONTACT FORM */
 
-.project-icon,
-.service-icon,
-.why-icon {
-    font-size: 40px;
-}
-
-.project-card h3,
-.service-card h3,
-.why-card h3 {
-    color: darkblue;
-}
-
-.project-card a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 18px;
-    background: darkblue;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-
-/* SERVICES */
-
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.service-card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-}
-
-
-/* WHY HIRE ME */
-
-.why-hire-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 25px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.why-card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
-}
-
-.why-card:hover {
-    transform: translateY(-8px);
-}
-
-
-/* CONTACT */
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-bottom: 30px;
-}
-
-.contact-item {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    min-width: 280px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-.contact-item h3 {
-    color: darkblue;
-}
-
-.contact-item a {
-    color: darkblue;
-    font-weight: bold;
-}
-
-#contactForm {
-    max-width: 650px;
+form {
+    max-width: 600px;
     margin: 30px auto;
-    padding: 25px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-#contactForm input,
-#contactForm textarea {
+input,
+textarea {
     width: 100%;
     padding: 14px;
-    margin: 10px 0;
-    border: 2px solid #ddd;
+    border: 2px solid #ccc;
     border-radius: 10px;
     font-size: 16px;
     font-family: Arial, sans-serif;
 }
 
-#contactForm button {
-    width: 100%;
-    padding: 14px;
-    border: none;
-    border-radius: 25px;
-    background: darkblue;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+textarea {
+    resize: vertical;
 }
 
-#formMessage {
-    font-weight: bold;
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: darkblue;
 }
 
+/* SOCIAL LINKS */
+
+section a {
+    transition: 0.3s;
+}
+
+section a:hover {
+    opacity: 0.8;
+}
 
 /* FOOTER */
 
 footer {
-    margin-top: 60px;
-    padding: 40px 20px;
-    background: #111;
-    color: white;
-    text-align: center;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-
-.social-links a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 18px;
-    border: 1px solid white;
-    border-radius: 8px;
-}
-
-.social-links a:hover {
-    background: white;
-    color: #111;
-}
-
-#topButton {
-    padding: 10px 18px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-
-/* DARK MODE */
-
-body.dark-mode {
-    background: #121212;
-    color: #eee;
-}
-
-body.dark-mode h1,
-body.dark-mode h2 {
-    color: #66ccff;
-}
-
-body.dark-mode .welcome-text {
-    color: white;
-}
-
-body.dark-mode .intro,
-body.dark-mode .about-card,
-body.dark-mode .skill,
-body.dark-mode .project-card,
-body.dark-mode .service-card,
-body.dark-mode .why-card,
-body.dark-mode .contact-item,
-body.dark-mode #contactForm {
-    background: #222;
-    color: white;
-}
-
-body.dark-mode .skill h3,
-body.dark-mode .project-card h3,
-body.dark-mode .service-card h3,
-body.dark-mode .why-card h3,
-body.dark-mode .contact-item h3 {
-    color: #66ccff;
-}
-
-body.dark-mode .skill-progress {
-    background: #66ccff;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 600px) {
-
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    #themeButton {
-        margin-top: 8px;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 27px;
-    }
-
-    .profile {
-        width: 180px;
-        height: 180px;
-    }
-
-    .about-card,
-    .intro,
-    #contactForm {
-        width: 90%;
-    }
-
-    .why-card {
-        width: 90%;
-        margin: auto;
-    }
-}
-/* BUTTONS */
-
-button,
-.whatsapp-btn,
-.hire-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    margin: 10px;
-    border: none;
-    border-radius: 25px;
     background: darkblue;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover,
-.whatsapp-btn:hover,
-.hire-btn:hover {
-    transform: scale(1.05);
-    background: #001f5c;
+    margin-top: 40px;
 }
 
 /* DARK MODE */
 
 .dark-mode {
     background: #121212;
-    color: white;
-}
-
-.dark-mode h1,
-.dark-mode h2 {
-    color: #66b3ff;
+    color: #f1f1f1;
 }
 
 .dark-mode nav {
     background: #050505;
 }
 
-.dark-mode .whatsapp-btn,
-.dark-mode .hire-btn {
-    background: #087f23;
+.dark-mode section h2,
+.dark-mode section h3,
+.dark-mode #home h1 {
+    color: #66b3ff;
+}
+
+.dark-mode #projects h3,
+.dark-mode #projects h3 + p,
+.dark-mode #services h3,
+.dark-mode #services h3 + p {
+    background: #1e1e1e;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background: #222;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode footer {
+    background: #050505;
+}
+
+.dark-mode .hire-btn,
+.dark-mode .whatsapp-btn {
+    background: #075e54;
 }
 
 /* MOBILE */
 
 @media (max-width: 768px) {
 
+    nav {
+        padding: 12px 5px;
+    }
+
     nav a {
         display: inline-block;
-        margin: 6px;
+        margin: 5px;
         font-size: 14px;
     }
 
-    h1 {
-        font-size: 32px;
+    #themeButton {
+        margin-top: 8px;
+        margin-left: 0;
     }
 
-    h2 {
-        font-size: 26px;
+    #home h1 {
+        font-size: 34px;
+    }
+
+    .welcome-text {
+        font-size: 17px;
     }
 
     section {
-        padding: 45px 15px;
+        padding: 40px 15px;
+        margin: 15px auto;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+    section h3 {
+        font-size: 20px;
+    }
+
+    .hire-btn,
+    .whatsapp-btn {
+        margin: 7px 3px;
     }
 }
+```
