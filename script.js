@@ -1,6 +1,4 @@
-/* ================================
-   DARK MODE
-================================ */
+/* DARK MODE */
 
 function toggleTheme() {
 
@@ -23,9 +21,7 @@ function toggleTheme() {
 }
 
 
-/* ================================
-   REMEMBER THEME
-================================ */
+/* REMEMBER THEME */
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -47,9 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* ================================
-   BACK TO TOP
-================================ */
+/* BACK TO TOP */
 
 function goToTop() {
 
@@ -61,9 +55,7 @@ function goToTop() {
 }
 
 
-/* ================================
-   CONTACT FORM
-================================ */
+/* CONTACT FORM */
 
 document.addEventListener("DOMContentLoaded", function () {
 
