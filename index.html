@@ -5,42 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PAYHINT | Web Developer & Digital Creator</title>
+    <title>PAYHINT | Web Developer</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================================
-         NAVIGATION
-    ================================= -->
-
+    <!-- NAVIGATION -->
     <nav>
 
-        <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
 
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-
-            <button id="themeButton" onclick="toggleTheme()">
-                🌙 Dark Mode
-            </button>
-
-        </div>
+        <button id="themeButton" onclick="toggleTheme()">
+            🌙 Dark Mode
+        </button>
 
     </nav>
 
 
-    <!-- ================================
-         HOME
-    ================================= -->
-
-    <section id="home" class="home-section">
+    <!-- HOME -->
+    <section id="home">
 
         <h1>
             Welcome to My Portfolio
@@ -50,10 +40,11 @@
             Web Developer • UI/UX Designer • Roblox Developer • App Developer • Graphic Designer
         </p>
 
-        <p class="home-description">
-            I build modern, responsive and user-friendly digital experiences using
-            HTML, CSS, JavaScript and creative design.
+        <p>
+            I build modern, responsive and user-friendly digital experiences
+            using HTML, CSS, JavaScript and creative design.
         </p>
+
 
         <div class="home-buttons">
 
@@ -73,7 +64,6 @@
 
 
         <!-- PROFILE PHOTO -->
-
         <img
             src="profile.jpg"
             alt="PAYHINT - Web Developer"
@@ -86,8 +76,7 @@
         </p>
 
 
-        <!-- INTRODUCTION -->
-
+        <!-- INTRO -->
         <div class="intro">
 
             <h2>
@@ -103,7 +92,7 @@
             <p>
                 I enjoy transforming ideas into clean, functional and
                 attractive digital experiences while continuously learning
-                new technologies and improving my skills.
+                new technologies.
             </p>
 
         </div>
@@ -111,10 +100,7 @@
     </section>
 
 
-    <!-- ================================
-         ABOUT ME
-    ================================= -->
-
+    <!-- ABOUT ME -->
     <section id="about">
 
         <h2>
@@ -129,19 +115,18 @@
             </p>
 
             <p>
-                My interests include web development, UI/UX design, Roblox
-                development, application development and graphic design.
+                My areas of interest include Web Development, UI/UX Design,
+                Roblox Development, App Development and Graphic Design.
             </p>
 
             <p>
-                I enjoy creating projects that are simple, modern,
-                responsive and easy for people to use.
+                I enjoy creating projects that are modern, responsive,
+                useful and easy for people to use.
             </p>
 
             <p>
-                My goal is to continue developing my technical and creative
-                skills and become a professional developer capable of
-                building useful digital products.
+                My goal is to continue improving my technical and creative
+                skills and become a professional developer.
             </p>
 
         </div>
@@ -149,10 +134,7 @@
     </section>
 
 
-    <!-- ================================
-         SKILLS
-    ================================= -->
-
+    <!-- MY SKILLS -->
     <section id="skills">
 
         <h2>
@@ -163,7 +145,6 @@
 
 
             <!-- HTML -->
-
             <div class="skill">
 
                 <h3>
@@ -171,19 +152,18 @@
                     <span>85%</span>
                 </h3>
 
-                <div class="skill-bar">
-                    <div class="skill-progress html-progress"></div>
-                </div>
-
                 <p>
                     Building structured, semantic and responsive websites.
                 </p>
+
+                <div class="skill-bar">
+                    <div class="skill-progress html-progress"></div>
+                </div>
 
             </div>
 
 
             <!-- CSS -->
-
             <div class="skill">
 
                 <h3>
@@ -191,19 +171,18 @@
                     <span>80%</span>
                 </h3>
 
-                <div class="skill-bar">
-                    <div class="skill-progress css-progress"></div>
-                </div>
-
                 <p>
                     Creating modern, responsive and attractive website designs.
                 </p>
+
+                <div class="skill-bar">
+                    <div class="skill-progress css-progress"></div>
+                </div>
 
             </div>
 
 
             <!-- JAVASCRIPT -->
-
             <div class="skill">
 
                 <h3>
@@ -211,19 +190,18 @@
                     <span>70%</span>
                 </h3>
 
-                <div class="skill-bar">
-                    <div class="skill-progress js-progress"></div>
-                </div>
-
                 <p>
                     Adding interaction, functionality and dynamic features.
                 </p>
+
+                <div class="skill-bar">
+                    <div class="skill-progress js-progress"></div>
+                </div>
 
             </div>
 
 
             <!-- UI/UX -->
-
             <div class="skill">
 
                 <h3>
@@ -239,7 +217,6 @@
 
 
             <!-- ROBLOX -->
-
             <div class="skill">
 
                 <h3>
@@ -255,7 +232,6 @@
 
 
             <!-- GRAPHIC DESIGN -->
-
             <div class="skill">
 
                 <h3>
@@ -271,7 +247,6 @@
 
 
             <!-- APP DEVELOPMENT -->
-
             <div class="skill">
 
                 <h3>
@@ -290,25 +265,21 @@
     </section>
 
 
-    <!-- ================================
-         PROJECTS
-    ================================= -->
-
+    <!-- PROJECTS -->
     <section id="projects">
 
         <h2>
             My Projects
         </h2>
 
-        <p class="projects-intro">
+        <p>
             Here are some of the projects I have worked on and continue
             to improve.
         </p>
 
+
         <div class="projects">
 
-
-            <!-- PORTFOLIO -->
 
             <div class="project-card">
 
@@ -329,8 +300,6 @@
             </div>
 
 
-            <!-- CV -->
-
             <div class="project-card">
 
                 <h3>
@@ -348,8 +317,6 @@
 
             </div>
 
-
-            <!-- CONTACT -->
 
             <div class="project-card">
 
@@ -373,20 +340,16 @@
     </section>
 
 
-    <!-- ================================
-         SERVICES
-    ================================= -->
-
+    <!-- SERVICES -->
     <section id="services">
 
         <h2>
             My Services
         </h2>
 
+
         <div class="services">
 
-
-            <!-- WEB DESIGN -->
 
             <div class="service-card">
 
@@ -396,13 +359,11 @@
 
                 <p>
                     I can create clean, attractive and responsive
-                    website designs using HTML and CSS.
+                    websites using HTML and CSS.
                 </p>
 
             </div>
 
-
-            <!-- JAVASCRIPT -->
 
             <div class="service-card">
 
@@ -411,14 +372,12 @@
                 </h3>
 
                 <p>
-                    I can add interactive features, animations and
-                    functionality to websites using JavaScript.
+                    I can add interactive features and functionality
+                    to websites using JavaScript.
                 </p>
 
             </div>
 
-
-            <!-- UI UX -->
 
             <div class="service-card">
 
@@ -434,8 +393,6 @@
             </div>
 
 
-            <!-- ROBLOX -->
-
             <div class="service-card">
 
                 <h3>
@@ -443,14 +400,12 @@
                 </h3>
 
                 <p>
-                    I create Roblox game concepts and interactive
-                    digital experiences.
+                    I create interactive Roblox experiences and
+                    game concepts.
                 </p>
 
             </div>
 
-
-            <!-- GRAPHIC DESIGN -->
 
             <div class="service-card">
 
@@ -459,14 +414,11 @@
                 </h3>
 
                 <p>
-                    I create creative graphics and visual content
-                    for digital projects.
+                    I create creative visual designs for digital projects.
                 </p>
 
             </div>
 
-
-            <!-- APP DEVELOPMENT -->
 
             <div class="service-card">
 
@@ -475,8 +427,7 @@
                 </h3>
 
                 <p>
-                    I explore and develop useful application ideas
-                    and digital solutions.
+                    I explore app concepts and build useful digital solutions.
                 </p>
 
             </div>
@@ -486,15 +437,13 @@
     </section>
 
 
-    <!-- ================================
-         WHY HIRE ME
-    ================================= -->
-
+    <!-- WHY HIRE ME -->
     <section id="why-hire">
 
         <h2>
             Why Hire Me?
         </h2>
+
 
         <div class="why-hire-cards">
 
@@ -506,8 +455,7 @@
                 </h3>
 
                 <p>
-                    I create clean and modern digital experiences
-                    with attention to creativity and detail.
+                    I create clean and modern digital experiences.
                 </p>
 
             </div>
@@ -520,8 +468,8 @@
                 </h3>
 
                 <p>
-                    I build websites that work well on phones,
-                    tablets and computers.
+                    I build websites that work well on phones
+                    and computers.
                 </p>
 
             </div>
@@ -545,30 +493,24 @@
     </section>
 
 
-    <!-- ================================
-         CONTACT
-    ================================= -->
-
+    <!-- CONTACT -->
     <section id="contact">
 
         <h2>
             Contact Me
         </h2>
 
-        <p class="contact-intro">
+        <p>
             Have a question, project idea or want to work with me?
             Send me a message and I'll get back to you.
         </p>
 
 
-        <p class="contact-email">
-
+        <p>
             📧 Email:
-
             <a href="mailto:busariquyumolamilekan@gmail.com">
                 busariquyumolamilekan@gmail.com
             </a>
-
         </p>
 
 
@@ -626,10 +568,7 @@
     </section>
 
 
-    <!-- ================================
-         FOOTER
-    ================================= -->
-
+    <!-- FOOTER -->
     <footer>
 
         <h3>
@@ -638,17 +577,11 @@
 
         <div class="social-links">
 
-            <a
-                href="#"
-                target="_blank"
-            >
+            <a href="#" target="_blank">
                 Facebook
             </a>
 
-            <a
-                href="https://github.com/DrBusari"
-                target="_blank"
-            >
+            <a href="https://github.com/DrBusari" target="_blank">
                 GitHub
             </a>
 
@@ -670,8 +603,6 @@
 
     </footer>
 
-
-    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
 
