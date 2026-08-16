@@ -65,21 +65,26 @@ function goToTop() {
    CONTACT FORM MESSAGE
 ================================ */
 
-const contactForm = document.getElementById("contactForm");
+document.addEventListener("DOMContentLoaded", function () {
 
-if (contactForm) {
+    const contactForm = document.getElementById("contactForm");
 
-    contactForm.addEventListener("submit", function () {
+    if (contactForm) {
 
-        const formMessage = document.getElementById("formMessage");
+        contactForm.addEventListener("submit", function () {
 
-        if (formMessage) {
+            const formMessage =
+                document.getElementById("formMessage");
 
-            formMessage.textContent =
-                "Sending your message...";
+            if (formMessage) {
 
-        }
+                formMessage.textContent =
+                    "Sending your message...";
 
-    });
+            }
 
-}
+        });
+
+    }
+
+});
